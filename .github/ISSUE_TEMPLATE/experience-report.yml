@@ -1,0 +1,58 @@
+name: "Campus job / lab experience report"
+description: "Worked a campus job or in a lab? Report pay, hours and whether you'd recommend it — anonymously if you like. This becomes pay transparency for future students."
+title: "Experience report: "
+labels: ["experience-report"]
+body:
+  - type: input
+    id: position
+    attributes:
+      label: Position / lab
+      description: The job title or lab name as it appears (or appeared) on the board
+      placeholder: "e.g. Multimedia Production Assistant, or Quinn Lab RA"
+    validations:
+      required: true
+  - type: input
+    id: pay
+    attributes:
+      label: Actual pay
+      placeholder: "e.g. $13.50/hr, or unpaid-for-credit (3 hrs)"
+    validations:
+      required: true
+  - type: dropdown
+    id: flexibility
+    attributes:
+      label: Schedule flexibility around classes
+      options:
+        - "Very flexible — built around my classes"
+        - "Somewhat flexible"
+        - "Rigid shifts"
+    validations:
+      required: true
+  - type: dropdown
+    id: resume-value
+    attributes:
+      label: Did it genuinely help your resume/skills?
+      options:
+        - "Yes — I talk about it in interviews"
+        - "Somewhat"
+        - "No — it was just a paycheck"
+    validations:
+      required: true
+  - type: dropdown
+    id: recommend
+    attributes:
+      label: Would you recommend it to another student?
+      options:
+        - "Strongly recommend"
+        - "Recommend"
+        - "Neutral"
+        - "Avoid"
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: What should the next student know?
+      description: Manager quality, hidden perks, how you got it — anything honest and useful. Don't name individuals negatively.
+    validations:
+      required: false

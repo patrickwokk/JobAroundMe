@@ -84,6 +84,37 @@ export interface MajorGroup {
   keywords: string[];
 }
 
+export interface Club {
+  id: string;
+  name: string;
+  majors: string[];
+  /** Career-track slugs this club feeds. */
+  tracks: string[];
+  blurb: string;
+  /** Search term for the HogSync directory link. */
+  searchTerm: string;
+}
+
+export interface TrackStep {
+  when: string;
+  what: string;
+  links?: Array<{ label: string; href: string }>;
+}
+
+export interface Track {
+  slug: string;
+  name: string;
+  /** The destination, e.g. "Finance analyst — Wall Street or Fortune 500". */
+  role: string;
+  majors: string[];
+  hook: string;
+  /** Honest paragraph: what this path takes from Fayetteville. */
+  reality: string;
+  /** Org-name substrings used to pin matching NWA/campus programs. */
+  employerMatch: string[];
+  ladder: TrackStep[];
+}
+
 export interface SiteMeta {
   lastRefreshed: string;
   counts: {

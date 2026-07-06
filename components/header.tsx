@@ -6,9 +6,11 @@ import { META } from "@/lib/data";
 import { fmtDate } from "@/lib/format";
 
 const NAV = [
-  { href: "/jobs", label: "The Listings" },
-  { href: "/labs", label: "The Labs" },
-  { href: "/#majors", label: "By Major" },
+  { href: "/jobs", label: "Listings" },
+  { href: "/labs", label: "Labs" },
+  { href: "/clubs", label: "Clubs" },
+  { href: "/tracks", label: "Tracks" },
+  { href: "/connect", label: "Connect" },
   { href: "/how-it-works", label: "How It Works" },
 ];
 

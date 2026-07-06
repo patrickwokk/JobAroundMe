@@ -7,6 +7,7 @@ import { LabCard } from "@/components/lab-card";
 import { ArrowUpRight, Bolt, Briefcase, Building, Flask } from "@/components/icons";
 import { HIRING_SIGNAL_LABS, LIVE_LABS, META, VISIBLE_JOBS, majorCounts } from "@/lib/data";
 import { MAJOR_GROUPS } from "@/lib/majors";
+import { TRACKS } from "@/lib/tracks";
 import { fmtDate } from "@/lib/format";
 
 export default function HomePage() {
@@ -91,10 +92,48 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* ————— Career tracks ————— */}
+      <section className="border-t border-line bg-paper-2">
+        <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
+          <SectionHeading
+            kicker="No. 2 — Or start from the ending"
+            title={
+              <>
+                Where are you <span className="italic text-cardinal">headed</span>?
+              </>
+            }
+            aside={
+              <Link href="/tracks" className="link-sweep inline-flex items-center gap-1 font-medium text-cardinal">
+                All {TRACKS.length} tracks <ArrowUpRight className="size-4" />
+              </Link>
+            }
+          />
+          <p className="-mt-2 mb-8 max-w-2xl text-sm leading-relaxed text-ink-soft">
+            Wall Street. Big tech. Med school. Each track lays out the four-year ladder of
+            jobs, labs and clubs — from Fayetteville, specifically — that gets you there.
+          </p>
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {TRACKS.slice(0, 6).map((track) => (
+              <Link
+                key={track.slug}
+                href={`/tracks/${track.slug}`}
+                className="lift group border border-line bg-paper p-5 hover:border-line-strong"
+              >
+                <p className="font-mono text-[10px] uppercase tracking-wider text-ink-faint">{track.role}</p>
+                <h3 className="font-display mt-2 text-xl font-black tracking-tight">
+                  {track.name}
+                  <ArrowUpRight className="ml-1.5 inline size-4 text-cardinal opacity-0 transition-opacity group-hover:opacity-100" />
+                </h3>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ————— Three doors ————— */}
       <section className="border-y-2 border-ink bg-ink text-paper">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <p className="kicker">No. 2 — Three doors in</p>
+          <p className="kicker">No. 3 — Three doors in</p>
           <h2 className="font-display mt-2 max-w-2xl text-3xl font-black tracking-tight sm:text-4xl">
             Every opportunity here fits one of three shapes.
           </h2>
@@ -138,7 +177,7 @@ export default function HomePage() {
       {/* ————— Fresh postings ————— */}
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
         <SectionHeading
-          kicker="No. 3 — Fresh off the feed"
+          kicker="No. 4 — Fresh off the feed"
           title="Newest campus postings"
           aside={
             <Link href="/jobs" className="link-sweep inline-flex items-center gap-1 font-medium text-cardinal">
@@ -157,7 +196,7 @@ export default function HomePage() {
       <section className="border-t border-line bg-paper-2">
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
           <SectionHeading
-            kicker="No. 4 — The hidden market"
+            kicker="No. 5 — The hidden market"
             title={
               <>
                 Professors don&apos;t post jobs. <span className="italic text-cardinal">They answer emails.</span>

@@ -7,9 +7,12 @@ Most U of A students never find out how much resume-building work exists within 
 ## What's different from LinkedIn / Indeed / Handshake
 
 1. **Major-first.** Pick what you study; get the jobs *and* the labs that build your specific resume.
-2. **The unlisted market.** Professors don't post research jobs — students email their way in. This repo maintains a campus-wide directory of lab websites (many on the `wordpressua.uark.edu` network), probes each one automatically for reachability and recruiting signals, and generates a professional intro email for you.
-3. **Meaning filter.** Curated NWA entries are limited to programs that give real career experience (Walmart Tech, J.B. Hunt, Tyson, Garver Launch, Crystal Bridges, semiconductor startups at the research park…). Generic retail shifts don't make the list.
-4. **Freshness you can audit.** Every listing shows when it was last verified, and the lifecycle below removes dead ones automatically.
+2. **Destination-first too.** [Career tracks](app/tracks) answer "I want to be a finance analyst / big-tech SWE / doctor — what do I do *from Fayetteville*?" with a four-year ladder of jobs, labs and clubs per goal.
+3. **The unlisted market.** Professors don't post research jobs — students email their way in. This repo maintains a campus-wide directory of lab websites (many on the `wordpressua.uark.edu` network), probes each one automatically for reachability and recruiting signals, and generates a professional intro email for you.
+4. **Clubs as career infrastructure.** A curated directory of the RSOs where internships circulate early (Poultry Science Club to ACM), tagged by major and track, linked into HogSync.
+5. **Meaning filter.** Curated NWA entries are limited to programs that give real career experience (Walmart Tech, J.B. Hunt, Tyson, Garver Launch, Crystal Bridges, semiconductor startups at the research park…). Generic retail shifts don't make the list.
+6. **Referrals, not just listings.** [Connect](docs/CONNECT.md) is a GitHub-Discussions-powered referral board (verified-identity Blind, minus the toxicity) with a documented v2 architecture.
+7. **Freshness you can audit.** Every listing shows when it was last verified, and the lifecycle below removes dead ones automatically.
 
 ## How listings come down (lifecycle management)
 
@@ -77,7 +80,23 @@ bun run refresh    # re-scrape all sources, sweep lifecycle, rewrite data/
 bun run build      # static production build
 ```
 
-The included GitHub Action runs `bun run refresh` daily and commits data changes, so the deployed site stays current without a server or database.
+## $0 operations
+
+The whole system runs free, permanently, with no servers:
+
+- **Hosting:** GitHub Pages serves the static export (`.github/workflows/deploy.yml`) at `https://patrickwokk.github.io/JobAroundMe/`.
+- **Daily refresh:** a scheduled Action (`refresh.yml`) re-scrapes every source at ~6am Central, commits data changes, and triggers a redeploy — listings update every day untouched.
+- **Community:** issues power "report filled" and experience reports; Discussions power the referral board.
+- **Analytics:** [GoatCounter](https://www.goatcounter.com) (free, no cookies) — create a site code and set it as the `GOATCOUNTER_CODE` repository variable to turn it on. Off by default.
+- **RSS:** `/feed.xml` for power users and future digest tooling.
+
+One caveat: GitHub disables cron workflows after 60 days without repo activity; the daily data commit itself counts as activity, so the loop self-sustains as long as listings actually change (and a monthly glance covers the rest).
+
+## Strategy docs
+
+- [docs/MONETIZATION.md](docs/MONETIZATION.md) — if/when traffic arrives: featured listings, sponsored tracks, partnership lanes; what to never do.
+- [docs/GROWTH.md](docs/GROWTH.md) — the RateMyProfessor playbook: data moats, seasonal pushes, the pay-transparency flywheel.
+- [docs/CONNECT.md](docs/CONNECT.md) — referral network v2 blueprint (@uark.edu-verified profiles on Supabase, still $0).
 
 ## Contributing
 
@@ -94,4 +113,4 @@ The included GitHub Action runs `bun run refresh` daily and commits data changes
 
 ## Disclaimer
 
-An independent student project, not an official University of Arkansas site. Every listing links to its original source — always apply there. Scrapers are rate-limited and hit only public pages.
+An independent project maintained from inside the U of A community — not an official University of Arkansas site. Every listing links to its original source — always apply there. Scrapers are rate-limited and hit only public pages.

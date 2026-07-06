@@ -21,6 +21,9 @@ export function Footer() {
           <ul className="mt-3 space-y-2">
             <li><Link className="link-sweep" href="/jobs">All listings</Link></li>
             <li><Link className="link-sweep" href="/labs">Research lab directory</Link></li>
+            <li><Link className="link-sweep" href="/clubs">Clubs worth joining</Link></li>
+            <li><Link className="link-sweep" href="/tracks">Career tracks</Link></li>
+            <li><Link className="link-sweep" href="/connect">Connect &amp; referrals</Link></li>
             <li><Link className="link-sweep" href="/how-it-works">How listings stay fresh</Link></li>
             <li>
               <a className="link-sweep" href={suggestListingUrl()} target="_blank" rel="noreferrer">
@@ -37,8 +40,9 @@ export function Footer() {
         <div className="text-sm text-ink-soft">
           <p className="kicker">Colophon</p>
           <p className="mt-3 leading-relaxed">
-            An independent student project — not an official University of Arkansas
-            site. Listings link to their original sources; always apply there.
+            An independent project from inside the U of A community, built to help
+            students thrive — not an official university site. Listings link to
+            their original sources; always apply there.
           </p>
           <p className="mt-3 font-mono text-[11px] tracking-wide">
             Set in Fraunces &amp; Schibsted Grotesk · Data refreshed {fmtDate(META.lastRefreshed)}

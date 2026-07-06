@@ -122,7 +122,7 @@ export default function HowItWorksPage() {
             },
             {
               q: "Is this an official University of Arkansas site?",
-              a: "No. It's an independent student project. Every listing links to its original source — always apply there, and trust the source over this site if they ever disagree.",
+              a: "No. It's an independent project maintained by someone inside the U of A community who wants students to find this work earlier. Every listing links to its original source — always apply there, and trust the source over this site if they ever disagree.",
             },
           ].map((item) => (
             <details key={item.q} className="group py-4">

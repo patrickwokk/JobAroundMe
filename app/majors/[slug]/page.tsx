@@ -3,10 +3,12 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { JobRow } from "@/components/job-row";
 import { LabCard } from "@/components/lab-card";
+import { ClubCard } from "@/components/club-card";
 import { SectionHeading } from "@/components/section-heading";
 import { ArrowUpRight } from "@/components/icons";
-import { ANY_MAJOR_JOBS, jobsTaggedFor, labsForMajor } from "@/lib/data";
+import { ANY_MAJOR_JOBS, clubsForMajor, jobsTaggedFor, labsForMajor } from "@/lib/data";
 import { MAJOR_BY_SLUG, MAJOR_GROUPS } from "@/lib/majors";
+import { TRACKS } from "@/lib/tracks";
 
 export const dynamicParams = false;
 
@@ -31,6 +33,8 @@ export default async function MajorPage({ params }: { params: Promise<{ slug: st
 
   const jobs = jobsTaggedFor(slug);
   const labs = labsForMajor(slug);
+  const clubs = clubsForMajor(slug);
+  const tracks = TRACKS.filter((t) => t.majors.includes(slug));
   const nwa = jobs.filter((j) => j.category === "nwa");
 
   return (
@@ -118,6 +122,46 @@ export default async function MajorPage({ params }: { params: Promise<{ slug: st
           </p>
         )}
       </section>
+
+      {clubs.length > 0 ? (
+        <section className="mt-14">
+          <SectionHeading
+            kicker="Section C"
+            title="Clubs that build momentum"
+            aside={
+              <Link href={`/clubs?major=${slug}`} className="link-sweep inline-flex items-center gap-1 font-medium text-cardinal">
+                All clubs <ArrowUpRight className="size-4" />
+              </Link>
+            }
+          />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {clubs.slice(0, 6).map((club) => (
+              <ClubCard key={club.id} club={club} />
+            ))}
+          </div>
+        </section>
+      ) : null}
+
+      {tracks.length > 0 ? (
+        <section className="mt-14">
+          <SectionHeading kicker="Section D" title="Tracks that start here" />
+          <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {tracks.map((track) => (
+              <Link
+                key={track.slug}
+                href={`/tracks/${track.slug}`}
+                className="lift group border border-line bg-paper p-5 hover:border-line-strong"
+              >
+                <p className="font-mono text-[10px] uppercase tracking-wider text-ink-faint">{track.role}</p>
+                <h3 className="font-display mt-2 text-xl font-black tracking-tight">
+                  {track.name}
+                  <ArrowUpRight className="ml-1.5 inline size-4 text-cardinal opacity-0 transition-opacity group-hover:opacity-100" />
+                </h3>
+              </Link>
+            ))}
+          </div>
+        </section>
+      ) : null}
 
       <section className="mt-14 border-2 border-ink bg-paper-2 p-7 sm:p-9">
         <p className="kicker">The play</p>

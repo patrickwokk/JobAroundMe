@@ -3,6 +3,7 @@ import { Fraunces, IBM_Plex_Mono, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { Analytics } from "@/components/analytics";
 
 const fraunces = Fraunces({
   variable: "--font-fraunces",
@@ -23,12 +24,19 @@ const plexMono = IBM_Plex_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://patrickwokk.github.io/JobAroundMe"),
   title: {
     default: "JobAroundMe — meaningful student work at the University of Arkansas",
     template: "%s · JobAroundMe",
   },
   description:
-    "Campus jobs, professor-led research labs, and NWA internships that actually build a resume — curated for University of Arkansas, Fayetteville students and sorted by major.",
+    "Campus jobs, professor-led research labs, clubs, and NWA internships that actually build a resume — curated for University of Arkansas, Fayetteville students and sorted by major and career track.",
+  openGraph: {
+    title: "JobAroundMe",
+    description:
+      "Work that counts: campus jobs, research labs, clubs and NWA internships for U of A students — verified on a schedule, sorted by major and career track.",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -48,6 +56,7 @@ export default function RootLayout({
         <Header />
         <main id="main">{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );

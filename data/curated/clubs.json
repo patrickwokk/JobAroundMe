@@ -1,0 +1,226 @@
+[
+  {
+    "id": "acm",
+    "name": "Association for Computing Machinery (ACM)",
+    "majors": ["eecs"],
+    "tracks": ["big-tech-swe", "data-ml"],
+    "blurb": "The CS department's home club: hackathons, interview prep nights, and the upperclassmen who already interned where you want to. Cheapest career insurance in the major.",
+    "searchTerm": "ACM"
+  },
+  {
+    "id": "ieee",
+    "name": "IEEE Student Branch",
+    "majors": ["eecs"],
+    "tracks": ["semiconductors", "big-tech-swe"],
+    "blurb": "Hardware-side counterpart to ACM — solder nights, industry talks, and the national IEEE resume badge that EE recruiters actually recognize.",
+    "searchTerm": "IEEE"
+  },
+  {
+    "id": "razorbotz",
+    "name": "Razorbotz Robotics",
+    "majors": ["eecs", "mech-civil-ind"],
+    "tracks": ["semiconductors", "big-tech-swe"],
+    "blurb": "Build competition robots across EE/ME/CS lines. A robot that survived a NASA competition is a senior-design story you get to tell as a sophomore.",
+    "searchTerm": "Razorbotz"
+  },
+  {
+    "id": "ai-data-groups",
+    "name": "AI & Data Science Groups",
+    "majors": ["eecs", "business", "physical-sciences"],
+    "tracks": ["data-ml", "big-tech-swe"],
+    "blurb": "Student AI/ML and data-science orgs run project teams and Kaggle-style competitions — the portfolio pieces data recruiters ask about. Names shift year to year; search HogSync for the active one.",
+    "searchTerm": "data science"
+  },
+  {
+    "id": "swe",
+    "name": "Society of Women Engineers (SWE)",
+    "majors": ["eecs", "mech-civil-ind", "biomed-chem"],
+    "tracks": ["big-tech-swe", "semiconductors", "supply-chain"],
+    "blurb": "One of the strongest employer pipelines in the College of Engineering — the SWE conference is functionally a career fair with a membership card.",
+    "searchTerm": "Society of Women Engineers"
+  },
+  {
+    "id": "asme",
+    "name": "American Society of Mechanical Engineers (ASME)",
+    "majors": ["mech-civil-ind"],
+    "tracks": ["semiconductors"],
+    "blurb": "Design-build competitions and plant tours; the chapter network is how ME students find the internships that never hit job boards.",
+    "searchTerm": "ASME"
+  },
+  {
+    "id": "asce",
+    "name": "American Society of Civil Engineers (ASCE)",
+    "majors": ["mech-civil-ind"],
+    "tracks": [],
+    "blurb": "Concrete canoe and steel bridge teams are the civil resume's proof-of-work — and Garver/Olsson engineers judge the competitions.",
+    "searchTerm": "ASCE"
+  },
+  {
+    "id": "iise",
+    "name": "Institute of Industrial & Systems Engineers (IISE)",
+    "majors": ["mech-civil-ind"],
+    "tracks": ["supply-chain"],
+    "blurb": "Industrial engineering's professional org — lean/six-sigma workshops and direct lines to the operations teams at NWA's logistics giants.",
+    "searchTerm": "Industrial Engineers"
+  },
+  {
+    "id": "ewb",
+    "name": "Engineers Without Borders (EWB)",
+    "majors": ["mech-civil-ind", "biomed-chem", "eecs"],
+    "tracks": [],
+    "blurb": "Real infrastructure projects for real communities — the rare club that gives you both engineering scope and a service story in one line.",
+    "searchTerm": "Engineers Without Borders"
+  },
+  {
+    "id": "aiche",
+    "name": "American Institute of Chemical Engineers (AIChE)",
+    "majors": ["biomed-chem"],
+    "tracks": ["research-phd"],
+    "blurb": "ChemE car competitions and industry nights; the chapter is where process-engineering internships circulate first.",
+    "searchTerm": "AIChE"
+  },
+  {
+    "id": "bmes",
+    "name": "Biomedical Engineering Society (BMES)",
+    "majors": ["biomed-chem"],
+    "tracks": ["med-school", "research-phd"],
+    "blurb": "The BMEG department's hub for lab openings, med-tech industry talks, and grad-school panels from students who just got in.",
+    "searchTerm": "Biomedical Engineering Society"
+  },
+  {
+    "id": "enactus",
+    "name": "Enactus",
+    "majors": ["business"],
+    "tracks": ["startup-founder", "wall-street-finance"],
+    "blurb": "Social-entrepreneurship project teams with a national competition circuit — Walton's flagship for students who want to build things, not just study them.",
+    "searchTerm": "Enactus"
+  },
+  {
+    "id": "finance-investment",
+    "name": "Finance & Investment Clubs (Walton)",
+    "majors": ["business"],
+    "tracks": ["wall-street-finance"],
+    "blurb": "Stock pitches, portfolio management, and alumni panels from banking and PE. If you want Wall Street from Arkansas, your pitch-competition record is your transcript. Search HogSync for the active finance orgs.",
+    "searchTerm": "finance"
+  },
+  {
+    "id": "supply-chain-orgs",
+    "name": "Supply Chain Student Orgs (Walton)",
+    "majors": ["business"],
+    "tracks": ["supply-chain"],
+    "blurb": "Walton's SCM orgs run site visits inside Walmart and J.B. Hunt operations and host the recruiters themselves. Membership is a soft first-round interview.",
+    "searchTerm": "supply chain"
+  },
+  {
+    "id": "beta-alpha-psi",
+    "name": "Beta Alpha Psi",
+    "majors": ["business"],
+    "tracks": ["wall-street-finance"],
+    "blurb": "The accounting/finance honor org — Big Four firms recruit through its meetings, and the GPA bar itself signals discipline.",
+    "searchTerm": "Beta Alpha Psi"
+  },
+  {
+    "id": "ama",
+    "name": "American Marketing Association (AMA)",
+    "majors": ["business", "arts-humanities"],
+    "tracks": ["startup-founder"],
+    "blurb": "Client projects and case competitions that produce actual campaign portfolios — the thing marketing hiring managers ask for and classes rarely provide.",
+    "searchTerm": "American Marketing Association"
+  },
+  {
+    "id": "aed",
+    "name": "Alpha Epsilon Delta (Pre-Health)",
+    "majors": ["life-sciences", "biomed-chem", "health-education"],
+    "tracks": ["med-school"],
+    "blurb": "The pre-health society: MCAT resources, physician shadowing connections, and volunteering pipelines — the logistics layer of a med-school application.",
+    "searchTerm": "Alpha Epsilon Delta"
+  },
+  {
+    "id": "psi-chi",
+    "name": "Psi Chi & Psychology Club",
+    "majors": ["social-sciences"],
+    "tracks": ["research-phd", "med-school"],
+    "blurb": "Psych grad programs expect research hours; these orgs are where lab RA openings get announced first. Pair membership with volunteering in a lab from the directory.",
+    "searchTerm": "psychology"
+  },
+  {
+    "id": "pre-law",
+    "name": "Pre-Law Society",
+    "majors": ["social-sciences", "business", "arts-humanities"],
+    "tracks": [],
+    "blurb": "LSAT prep, law-school admissions panels, and mock trial adjacency — plus the writing-heavy campus jobs that make a law application read well.",
+    "searchTerm": "pre-law"
+  },
+  {
+    "id": "sps",
+    "name": "Society of Physics Students",
+    "majors": ["physical-sciences"],
+    "tracks": ["research-phd", "semiconductors"],
+    "blurb": "Small department, tight club: research openings, REU application help, and professors at pizza nights. The path into quantum-materials labs starts here.",
+    "searchTerm": "physics"
+  },
+  {
+    "id": "acs",
+    "name": "American Chemical Society Student Chapter",
+    "majors": ["physical-sciences"],
+    "tracks": ["research-phd", "med-school"],
+    "blurb": "Chemistry's professional org on campus — demo outreach, research mixers, and the membership line every chemistry grad application carries.",
+    "searchTerm": "American Chemical Society"
+  },
+  {
+    "id": "poultry-science",
+    "name": "Poultry Science Club",
+    "majors": ["ag-food"],
+    "tracks": ["food-ag-industry"],
+    "blurb": "In the poultry capital of the world, this club is a professional network: Tyson, Simmons and George's sponsor events and hire from the judging teams by name.",
+    "searchTerm": "poultry"
+  },
+  {
+    "id": "block-bridle",
+    "name": "Block & Bridle",
+    "majors": ["ag-food"],
+    "tracks": ["food-ag-industry"],
+    "blurb": "Animal science's marquee club — livestock shows, industry trips, and the hands-on record ag employers screen for.",
+    "searchTerm": "Block and Bridle"
+  },
+  {
+    "id": "food-science-club",
+    "name": "Food Science Club",
+    "majors": ["ag-food", "life-sciences"],
+    "tracks": ["food-ag-industry"],
+    "blurb": "Product-development competitions judged by the industry next door. College Bowl teams here have national wins — and R&D internships follow.",
+    "searchTerm": "food science"
+  },
+  {
+    "id": "nursing-association",
+    "name": "Student Nurses' Association",
+    "majors": ["health-education"],
+    "tracks": ["med-school"],
+    "blurb": "Clinical volunteering coordination, NCLEX prep culture, and hospital connections — the professional on-ramp for nursing students.",
+    "searchTerm": "nurses"
+  },
+  {
+    "id": "student-media",
+    "name": "Student Media — The Arkansas Traveler, UATV, KXUA",
+    "majors": ["arts-humanities"],
+    "tracks": ["startup-founder"],
+    "blurb": "The student paper, TV station and radio station are working newsrooms with real audiences — published clips and produced segments are the portfolio that gets media jobs.",
+    "searchTerm": "student media"
+  },
+  {
+    "id": "aias",
+    "name": "American Institute of Architecture Students (AIAS)",
+    "majors": ["arts-humanities"],
+    "tracks": [],
+    "blurb": "Fay Jones students' professional org — firm crawls, portfolio reviews, and the mentorship that demystifies licensure.",
+    "searchTerm": "architecture"
+  },
+  {
+    "id": "prssa",
+    "name": "Public Relations Student Society (PRSSA)",
+    "majors": ["arts-humanities", "business"],
+    "tracks": [],
+    "blurb": "Client work for real organizations plus the national PRSSA network — communications hiring runs on exactly these portfolios and references.",
+    "searchTerm": "public relations"
+  }
+]

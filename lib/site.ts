@@ -1,6 +1,14 @@
 /** Repo home — used for "report this listing" issue links and the footer. */
 export const REPO_URL = "https://github.com/patrickwokk/JobAroundMe";
 
+/** The referral board pilot lives on GitHub Discussions (free, spam-resistant). */
+export const DISCUSSIONS_URL = `${REPO_URL}/discussions`;
+
+/** HogSync (CampusGroups) is UofA's official club directory. */
+export function hogsyncUrl(searchTerm: string): string {
+  return `https://hogsync.uark.edu/club_signup?search=${encodeURIComponent(searchTerm)}`;
+}
+
 export function reportFilledUrl(jobId: string, title: string): string {
   const params = new URLSearchParams({
     title: `Filled/expired: ${title}`,
