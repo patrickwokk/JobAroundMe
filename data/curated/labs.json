@@ -1,0 +1,305 @@
+[
+  {
+    "id": "mscad",
+    "name": "Mixed-Signal Computer-Aided Design Lab (MSCAD)",
+    "pi": "Alan Mantooth",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Power electronics", "IC design", "Electronic design automation"],
+    "url": "https://mscad.uark.edu/",
+    "contactHint": "One of the largest research groups on campus — undergrads regularly join as hourly researchers."
+  },
+  {
+    "id": "trulogic",
+    "name": "Trustable Logic Circuit Design Lab",
+    "pi": "Jia Di",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Asynchronous circuits", "Hardware security", "Low-power VLSI"],
+    "url": "https://wordpressua.uark.edu/jdi/"
+  },
+  {
+    "id": "wu-lab",
+    "name": "Intelligent Information Sensing, Processing & Transmission Lab",
+    "pi": "Jingxian Wu",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Wireless communications", "Signal processing", "Machine learning"],
+    "url": "https://wordpressua.uark.edu/wuj/"
+  },
+  {
+    "id": "terahertz",
+    "name": "Terahertz Imaging & Spectroscopy Lab",
+    "pi": "Magda El-Shenawee",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Terahertz imaging", "Computational electromagnetics", "Medical imaging"],
+    "url": "https://terahertz.uark.edu/"
+  },
+  {
+    "id": "optoelectronics",
+    "name": "Optoelectronics Research Lab",
+    "pi": "",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs", "physical-sciences"],
+    "areas": ["Photonics", "Semiconductor lasers", "Optical devices"],
+    "url": "https://optoelectronics.uark.edu/"
+  },
+  {
+    "id": "sail",
+    "name": "Social Awareness & Intelligent Learning Lab (SAIL)",
+    "pi": "",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Artificial intelligence", "Machine learning", "Data mining"],
+    "url": "https://sail.uark.edu/"
+  },
+  {
+    "id": "cviu",
+    "name": "Computer Vision & Image Understanding Lab (CVIU)",
+    "pi": "Khoa Luu",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Computer vision", "Deep learning", "Biometrics"],
+    "url": "https://uark-cviu.github.io/"
+  },
+  {
+    "id": "ascent",
+    "name": "Arkansas Security Research & Education Institute (ASCEnt)",
+    "pi": "",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Cybersecurity", "Critical infrastructure", "Security education"],
+    "url": "https://ascent.uark.edu/"
+  },
+  {
+    "id": "ncrept",
+    "name": "National Center for Reliable Electric Power Transmission (NCREPT)",
+    "pi": "",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Power grid", "High-voltage testing", "Power electronics"],
+    "url": "https://ncrept.uark.edu/"
+  },
+  {
+    "id": "grapes",
+    "name": "GRAPES — Grid-Connected Advanced Power Electronic Systems",
+    "pi": "",
+    "department": "Electrical Engineering & Computer Science",
+    "majors": ["eecs"],
+    "areas": ["Power electronics", "Smart grid", "Industry consortium"],
+    "url": "https://grapes.uapower.group/"
+  },
+  {
+    "id": "hidec",
+    "name": "High Density Electronics Center (HiDEC)",
+    "pi": "",
+    "department": "College of Engineering",
+    "majors": ["eecs", "mech-civil-ind"],
+    "areas": ["Electronics packaging", "Microfabrication", "Cleanroom"],
+    "url": "https://high-density-electronics.uark.edu/",
+    "contactHint": "Cleanroom experience is rare on a resume — ask about student technician openings."
+  },
+  {
+    "id": "ahpcc",
+    "name": "Arkansas High Performance Computing Center (AHPCC)",
+    "pi": "",
+    "department": "University Research Center",
+    "majors": ["eecs", "physical-sciences"],
+    "areas": ["Supercomputing", "Linux systems", "Research computing"],
+    "url": "https://hpc.uark.edu/",
+    "contactHint": "Runs the campus supercomputers — student sysadmin experience here is gold for infra/DevOps careers."
+  },
+  {
+    "id": "cast",
+    "name": "Center for Advanced Spatial Technologies (CAST)",
+    "pi": "",
+    "department": "University Research Center",
+    "majors": ["eecs", "social-sciences", "arts-humanities"],
+    "areas": ["GIS", "Remote sensing", "3D scanning", "Digital heritage"],
+    "url": "https://cast.uark.edu/",
+    "contactHint": "Hires students across majors for GIS and scanning projects — great mix of tech and fieldwork."
+  },
+  {
+    "id": "nmtl",
+    "name": "Nanomechanics & Tribology Laboratory",
+    "pi": "Min Zou",
+    "department": "Mechanical Engineering",
+    "majors": ["mech-civil-ind", "physical-sciences"],
+    "areas": ["Surface engineering", "Coatings", "Nanomechanics"],
+    "url": "https://wordpressua.uark.edu/mzou/"
+  },
+  {
+    "id": "sydl",
+    "name": "System Design Analytics Laboratory (SyDAL)",
+    "pi": "",
+    "department": "Industrial Engineering",
+    "majors": ["mech-civil-ind"],
+    "areas": ["Systems engineering", "Design analytics", "Decision modeling"],
+    "url": "https://sydl.uark.edu/"
+  },
+  {
+    "id": "stephens-url",
+    "name": "Stephens Undergraduate Research Laboratory",
+    "pi": "",
+    "department": "Industrial Engineering",
+    "majors": ["mech-civil-ind"],
+    "areas": ["Undergraduate research", "Industrial engineering"],
+    "url": "https://industrial-engineering.uark.edu/Research/larry-and-gwen-stephens-undergraduate-research-laboratory.php",
+    "contactHint": "A lab built specifically for undergraduates — contact the Industrial Engineering department office."
+  },
+  {
+    "id": "mack-blackwell",
+    "name": "Mack-Blackwell Rural Transportation Center",
+    "pi": "",
+    "department": "Civil Engineering",
+    "majors": ["mech-civil-ind"],
+    "areas": ["Transportation", "Infrastructure", "Freight"],
+    "url": "https://mack-blackwell.uark.edu/"
+  },
+  {
+    "id": "martrec",
+    "name": "Maritime Transportation Research & Education Center (MarTREC)",
+    "pi": "",
+    "department": "Civil Engineering",
+    "majors": ["mech-civil-ind", "business"],
+    "areas": ["Maritime logistics", "Supply chain resilience", "Transportation"],
+    "url": "https://martrec.uark.edu/"
+  },
+  {
+    "id": "quinn",
+    "name": "Quantitative Tissue Diagnostics Laboratory",
+    "pi": "Kyle Quinn",
+    "department": "Biomedical Engineering",
+    "majors": ["biomed-chem"],
+    "areas": ["Tissue optics", "Wound healing", "Metabolic imaging"],
+    "url": "https://kpquinn.hosted.uark.edu/"
+  },
+  {
+    "id": "cblab",
+    "name": "Cardiovascular Biomechanics Laboratory",
+    "pi": "Morten Jensen",
+    "department": "Biomedical Engineering",
+    "majors": ["biomed-chem"],
+    "areas": ["Cardiovascular devices", "Biomechanics", "Medical devices"],
+    "url": "https://cblab.uark.edu/"
+  },
+  {
+    "id": "nelson-lab",
+    "name": "Precision Genome Engineering Laboratory",
+    "pi": "Christopher Nelson",
+    "department": "Biomedical Engineering",
+    "majors": ["biomed-chem", "life-sciences"],
+    "areas": ["CRISPR", "Gene therapy", "Genome engineering"],
+    "url": "https://nelsonlab.uark.edu/"
+  },
+  {
+    "id": "scbioengr",
+    "name": "Stem Cell Bioengineering Laboratory",
+    "pi": "Raj Rao",
+    "department": "Biomedical Engineering",
+    "majors": ["biomed-chem", "life-sciences"],
+    "areas": ["Stem cells", "Regenerative medicine", "Cell manufacturing"],
+    "url": "https://scbioengr.uark.edu/"
+  },
+  {
+    "id": "samsonraj",
+    "name": "Samsonraj Cellular Therapy & Biomanufacturing Laboratory",
+    "pi": "Rebekah Samsonraj",
+    "department": "Biomedical Engineering",
+    "majors": ["biomed-chem"],
+    "areas": ["Mesenchymal stem cells", "Cell therapy", "Biomanufacturing"],
+    "url": "https://samsonrajlab.uark.edu/"
+  },
+  {
+    "id": "songlab",
+    "name": "Therapeutic Testbed Engineering Laboratory",
+    "pi": "",
+    "department": "Biomedical Engineering",
+    "majors": ["biomed-chem"],
+    "areas": ["Tissue engineering", "Therapeutic testbeds", "Neural regeneration"],
+    "url": "https://wordpressua.uark.edu/songlab/"
+  },
+  {
+    "id": "polynel",
+    "name": "Polymer Nanocomposite Engineering Laboratory (PolyNEL)",
+    "pi": "Keisha Walters",
+    "department": "Chemical Engineering",
+    "majors": ["biomed-chem", "physical-sciences"],
+    "areas": ["Polymers", "Nanocomposites", "Surface modification"],
+    "url": "https://polynel.uark.edu/"
+  },
+  {
+    "id": "monroe",
+    "name": "Monroe Molecular Simulation Group",
+    "pi": "Jacob Monroe",
+    "department": "Chemical Engineering",
+    "majors": ["biomed-chem", "physical-sciences", "eecs"],
+    "areas": ["Molecular simulation", "Machine learning", "Materials design"],
+    "url": "https://monroemolsimgroup.uark.edu/"
+  },
+  {
+    "id": "nayani",
+    "name": "Nayani Lab",
+    "pi": "Karthik Nayani",
+    "department": "Chemical Engineering",
+    "majors": ["biomed-chem", "physical-sciences"],
+    "areas": ["Liquid crystals", "Soft matter", "Biosensing"],
+    "url": "https://nayanilab.weebly.com/"
+  },
+  {
+    "id": "nakanishi",
+    "name": "Nakanishi Lab — Early Animal Evolution",
+    "pi": "Nagayasu Nakanishi",
+    "department": "Biological Sciences",
+    "majors": ["life-sciences"],
+    "areas": ["Neural development", "Evolution", "Cnidarian biology"],
+    "url": "https://wordpressua.uark.edu/nakanishi-lab/"
+  },
+  {
+    "id": "rhoads",
+    "name": "Rhoads Lab — Cell & Molecular Biology",
+    "pi": "Douglas Rhoads",
+    "department": "Biological Sciences",
+    "majors": ["life-sciences", "ag-food"],
+    "areas": ["Genomics", "Molecular biology", "Poultry genetics"],
+    "url": "https://wordpressua.uark.edu/drhoads/"
+  },
+  {
+    "id": "petal",
+    "name": "PETAL Laboratory (Psychological Science)",
+    "pi": "",
+    "department": "Psychological Science",
+    "majors": ["social-sciences"],
+    "areas": ["Anxiety research", "Emotion", "Developmental psychopathology"],
+    "url": "https://wordpressua.uark.edu/mfeldne/",
+    "contactHint": "Psych labs run on undergraduate research assistants — a semester of RA hours is the standard path to grad school."
+  },
+  {
+    "id": "spacecenter",
+    "name": "Arkansas Center for Space & Planetary Sciences",
+    "pi": "",
+    "department": "University Research Center",
+    "majors": ["physical-sciences", "mech-civil-ind"],
+    "areas": ["Planetary science", "Astrobiology", "Space instrumentation"],
+    "url": "https://spacecenter.uark.edu/"
+  },
+  {
+    "id": "aimrc",
+    "name": "Arkansas Integrative Metabolic Research Center (AIMRC)",
+    "pi": "",
+    "department": "University Research Center",
+    "majors": ["life-sciences", "biomed-chem"],
+    "areas": ["Metabolism", "Cell biology", "Core research facilities"],
+    "url": "https://aimrc.uark.edu/"
+  },
+  {
+    "id": "nano",
+    "name": "Institute for Nanoscience & Engineering",
+    "pi": "",
+    "department": "University Research Center",
+    "majors": ["physical-sciences", "eecs", "biomed-chem"],
+    "areas": ["Nanomaterials", "Microscopy", "Interdisciplinary research"],
+    "url": "https://nano.uark.edu/"
+  }
+]

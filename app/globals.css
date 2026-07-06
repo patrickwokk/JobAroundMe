@@ -1,26 +1,103 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Warm editorial palette — cream paper, warm ink, UofA cardinal. */
+  --color-paper: #faf6ef;
+  --color-paper-2: #f3ecdf;
+  --color-paper-3: #eee5d3;
+  --color-ink: #1d1512;
+  --color-ink-soft: #6b5d54;
+  --color-ink-faint: #98897e;
+  --color-cardinal: #9d2235;
+  --color-cardinal-deep: #7c1a29;
+  --color-cardinal-wash: #f6e7e5;
+  --color-moss: #3d5a40;
+  --color-moss-wash: #e9efe4;
+  --color-amber-note: #8a6410;
+  --color-amber-wash: #f7edd6;
+  --color-line: #e2d7c3;
+  --color-line-strong: #cbbc9f;
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-schibsted);
+  --font-mono: var(--font-plex-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-schibsted), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: var(--color-cardinal);
+  color: var(--color-paper);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-cardinal);
+  outline-offset: 2px;
+}
+
+/* ————— editorial helpers ————— */
+
+.kicker {
+  font-family: var(--font-plex-mono), monospace;
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-cardinal);
+}
+
+.rule-dotted {
+  background-image: radial-gradient(circle, var(--color-line-strong) 1px, transparent 1.5px);
+  background-size: 8px 2px;
+  background-repeat: repeat-x;
+  height: 2px;
+}
+
+/* Latest-listings ticker */
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.ticker-track {
+  animation: ticker-scroll 55s linear infinite;
+}
+.ticker-track:hover {
+  animation-play-state: paused;
+}
+@media (prefers-reduced-motion: reduce) {
+  .ticker-track {
+    animation: none;
+  }
+}
+
+/* Card lift */
+.lift {
+  transition: transform 150ms ease, box-shadow 150ms ease, border-color 150ms ease;
+}
+.lift:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 24px -14px rgb(29 21 18 / 0.35);
+}
+
+/* Underline sweep for nav / inline links */
+.link-sweep {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  transition: background-size 180ms ease;
+  padding-bottom: 1px;
+}
+.link-sweep:hover {
+  background-size: 100% 1px;
 }

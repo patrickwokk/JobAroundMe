@@ -1,0 +1,790 @@
+[
+  {
+    "id": "curated:arcbest-tech",
+    "title": "ArcBest Internship Program",
+    "org": "ArcBest",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "eecs",
+      "business"
+    ],
+    "location": "Fort Smith / NWA, AR",
+    "blurb": "Logistics technology and operations internships at a Fortune 500 freight company with a growing tech arm.",
+    "applyUrl": "https://arcb.com/",
+    "tags": [
+      "logistics tech"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:arvest-internships",
+    "title": "Arvest Bank Internships",
+    "org": "Arvest Bank",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "business"
+    ],
+    "location": "Fayetteville / Bentonville, AR",
+    "blurb": "Finance, banking operations and technology internships at one of the region's largest banks.",
+    "applyUrl": "https://www.arvest.com/",
+    "tags": [
+      "finance"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:crystal-bridges",
+    "title": "Crystal Bridges & the Momentary — Internships",
+    "org": "Crystal Bridges Museum of American Art",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "arts-humanities",
+      "business"
+    ],
+    "location": "Bentonville, AR",
+    "blurb": "Paid internships at a world-class art museum: curatorial, education, marketing, culinary, operations. Museum experience of this caliber is rare outside coastal cities.",
+    "applyUrl": "https://crystalbridges.org/",
+    "tags": [
+      "paid",
+      "arts careers"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:field-agent",
+    "title": "Field Agent Internships",
+    "org": "Field Agent",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "business",
+      "eecs"
+    ],
+    "location": "Fayetteville, AR",
+    "blurb": "A retail-insights tech company founded by UofA grads — crowdsourced shopper data for major CPG brands. Marketing, analytics and engineering exposure in one small team.",
+    "applyUrl": "https://www.fieldagent.net/",
+    "tags": [
+      "UofA founded",
+      "retail tech"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:finding-nwa",
+    "title": "Finding NWA — Regional Internship Hub",
+    "org": "Northwest Arkansas Council",
+    "category": "nwa",
+    "type": "program",
+    "majors": [],
+    "location": "Northwest Arkansas",
+    "blurb": "The region's talent hub: internship listings across NWA employers plus intern social programming each summer. A good second stop after the listings here.",
+    "applyUrl": "https://findingnwa.com/",
+    "tags": [
+      "regional hub"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:garver-launch",
+    "title": "Garver Launch — Engineering Internships",
+    "org": "Garver",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "mech-civil-ind",
+      "eecs"
+    ],
+    "location": "Fayetteville, AR + offices region-wide",
+    "blurb": "Paid 10–12 week engineering internships running spring, summer and fall, with housing stipends when applicable. Named a Large Employer of the Year for mentoring UofA engineering interns.",
+    "applyUrl": "https://garverusa.com/careers/internships",
+    "tags": [
+      "year-round",
+      "award-winning mentoring"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:handshake-oncampus",
+    "title": "On-Campus Jobs & Federal Work-Study Feed",
+    "org": "Office of Career Connections · Handshake",
+    "category": "on-campus",
+    "type": "work-study",
+    "majors": [],
+    "location": "Fayetteville campus",
+    "pay": "$11–14/hr typical",
+    "blurb": "The official stream of on-campus openings — tutors, help desk, peer mentors, department assistants. Log in with your UARK email, filter \"On-Campus\"; work-study eligible students can filter for funded positions.",
+    "applyUrl": "https://uark.joinhandshake.com/",
+    "tags": [
+      "official portal",
+      "UARK login"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:honors-research",
+    "title": "Honors College Research Grants",
+    "org": "Honors College",
+    "category": "research",
+    "type": "program",
+    "majors": [],
+    "location": "Fayetteville campus",
+    "blurb": "Honors students can get their own mentored research funded. Pair a grant with a lab from this site's directory and you're doing paid, publishable work before you graduate.",
+    "applyUrl": "https://honorscollege.uark.edu/",
+    "tags": [
+      "honors students",
+      "funding"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:i3r-students",
+    "title": "I³R Student Research Opportunities",
+    "org": "Institute for Integrative & Innovative Research",
+    "category": "research",
+    "type": "research-assistant",
+    "majors": [
+      "eecs",
+      "biomed-chem",
+      "life-sciences",
+      "business"
+    ],
+    "location": "Fayetteville campus",
+    "blurb": "The university's flagship new research institute works across AI, robotics, bioscience and materials with an explicit industry-deployment mission. Watch its openings and email research teams directly.",
+    "applyUrl": "https://i3r.uark.edu/",
+    "tags": [
+      "flagship institute",
+      "emerging tech"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:its-student-tech",
+    "title": "IT Services Student Technicians",
+    "org": "University IT Services",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "eecs"
+    ],
+    "location": "Fayetteville campus",
+    "blurb": "Help desk, classroom AV, computer lab support. The classic first tech job: real ticket queues, real users, and a reference that says you can troubleshoot under pressure.",
+    "applyUrl": "https://its.uark.edu/",
+    "tags": [
+      "resume starter",
+      "tech support"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:jbhunt-internships",
+    "title": "J.B. Hunt Internship Program",
+    "org": "J.B. Hunt Transport",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "eecs",
+      "business",
+      "mech-civil-ind"
+    ],
+    "location": "Lowell, AR",
+    "blurb": "Technology, engineering, logistics and operations internships at one of North America's largest transportation companies — HQ is 15 minutes up I-49 from campus.",
+    "applyUrl": "https://www.jbhunt.com/careers",
+    "tags": [
+      "logistics tech",
+      "close to campus"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:libraries-student",
+    "title": "University Libraries Student Assistants",
+    "org": "University Libraries",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Mullins Library & branches",
+    "blurb": "Circulation desks, digitization projects, special collections. Quiet, study-adjacent shifts — postings appear on Handshake each semester.",
+    "applyUrl": "https://libraries.uark.edu/",
+    "tags": [
+      "study friendly"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:mcmillon-studio",
+    "title": "McMillon Innovation Studio — Design Teams",
+    "org": "McMillon Innovation Studio",
+    "category": "on-campus",
+    "type": "program",
+    "majors": [],
+    "location": "Fayetteville campus",
+    "blurb": "Interdisciplinary student teams solve real problems for real organizations each semester — with mentors from NWA's biggest companies. Standout teams advance to funded Product Teams. Every major welcome.",
+    "applyUrl": "https://mcmillonstudio.uark.edu/",
+    "tags": [
+      "portfolio builder",
+      "network builder",
+      "all majors"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:movista",
+    "title": "Movista — Retail Tech Internships",
+    "org": "Movista",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "eecs",
+      "business"
+    ],
+    "location": "Bentonville, AR",
+    "blurb": "A Bentonville software company building retail workforce-execution tools used by major brands. Engineering, product and customer-success exposure at a real SaaS company minutes from the Walmart ecosystem.",
+    "applyUrl": "https://www.movista.com/",
+    "tags": [
+      "SaaS",
+      "retail tech"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:ozark-ic",
+    "title": "Ozark Integrated Circuits — Student Internships",
+    "org": "Ozark IC",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "eecs"
+    ],
+    "location": "Arkansas Research & Technology Park, Fayetteville",
+    "blurb": "Extreme-environment semiconductors designed at the research park next to campus. Genuine chip-design and test experience at a small company — the kind of resume line that gets interviews.",
+    "applyUrl": "https://www.ozarkic.com/",
+    "tags": [
+      "semiconductors",
+      "research park"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:razortemps",
+    "title": "RazorTemps — Campus Temporary Staffing Pool",
+    "org": "University of Arkansas Human Resources",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville campus",
+    "blurb": "The university's in-house temp team places students into paid administrative positions across campus departments. One application, many placements — a low-friction first campus job.",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/en-US/UASYS/job/RazorTemps---Temporary-Administrative-Positions--Anticipated-Future-Openings-_R0004720",
+    "tags": [
+      "flexible hours",
+      "no experience needed"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:simmons-internships",
+    "title": "Simmons Foods Internships",
+    "org": "Simmons Foods",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "ag-food",
+      "business"
+    ],
+    "location": "Siloam Springs / Springdale, AR",
+    "blurb": "Summer internships across operations, food safety, ag services and corporate functions at a major NWA poultry and pet-food producer, actively recruiting UofA students.",
+    "applyUrl": "https://www.simmonsfoods.com/",
+    "tags": [
+      "actively recruiting"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:startup-junkie",
+    "title": "Startup Junkie Internships",
+    "org": "Startup Junkie",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "business"
+    ],
+    "location": "Fayetteville, AR (the Square)",
+    "blurb": "The entrepreneurship consultancy on the Fayetteville square: interns support founders, run events and see dozens of real startups up close. Walkable from campus.",
+    "applyUrl": "https://startupjunkie.org/",
+    "tags": [
+      "entrepreneurship",
+      "walkable"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:tyson-internships",
+    "title": "Tyson Foods University Internships",
+    "org": "Tyson Foods",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "ag-food",
+      "business",
+      "mech-civil-ind",
+      "eecs"
+    ],
+    "location": "Springdale, AR",
+    "blurb": "Food science, supply chain, engineering, IT and finance internships at the world's second-largest protein company, headquartered one town over.",
+    "applyUrl": "https://www.tysonfoods.com/careers",
+    "tags": [
+      "food science",
+      "Fortune 100"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:urec-jobs",
+    "title": "UREC Student Employment",
+    "org": "University Recreation",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "health-education"
+    ],
+    "location": "Fayetteville campus",
+    "blurb": "One of the largest student employers on campus: lifeguards, fitness attendants, intramural officials, trip leaders. Kinesiology-adjacent hours plus a genuine leadership ladder to supervisor roles.",
+    "applyUrl": "https://urec.uark.edu/",
+    "tags": [
+      "large employer",
+      "any major welcome"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:walmart-internships",
+    "title": "Walmart Internships — Tech & Corporate",
+    "org": "Walmart",
+    "category": "nwa",
+    "type": "internship",
+    "majors": [
+      "eecs",
+      "business"
+    ],
+    "location": "Bentonville, AR",
+    "blurb": "Software engineering, data science, supply chain, merchandising and finance internships at the home office of the world's largest company — a structured 10-week program with heavy UofA recruiting and strong return-offer rates.",
+    "applyUrl": "https://careers.walmart.com/locations/northwest-arkansas",
+    "tags": [
+      "Fortune 1",
+      "high conversion"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "curated:washington-regional",
+    "title": "Washington Regional — Student Clinical Roles",
+    "org": "Washington Regional Medical Center",
+    "category": "nwa",
+    "type": "part-time",
+    "majors": [
+      "health-education",
+      "life-sciences"
+    ],
+    "location": "Fayetteville, AR",
+    "blurb": "Fayetteville's hospital hires patient care techs and support staff — clinical hours that count for nursing and pre-health applications.",
+    "applyUrl": "https://www.wregional.com/",
+    "tags": [
+      "clinical hours",
+      "pre-health"
+    ],
+    "source": "curated",
+    "evergreen": true,
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0004720",
+    "title": "RazorTemps – Temporary Positions (Anticipated Current and Future Openings)",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "business"
+    ],
+    "location": "Fayetteville",
+    "blurb": "RazorTemps is our on campus Temporary Staffing team at the University of Arkansas, Fayetteville. Our team works in central HR, and we place both students and non-students into temporary positions on the Fayetteville campus. RazorTemps…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/RazorTemps---Temporary-Positions--Anticipated-Current-and-Future-Openings-_R0004720",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:17:00.959Z",
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0049835",
+    "title": "Academic Tutor (Current and Anticipated Future Openings)",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville, AR",
+    "pay": "$15.00 per hour",
+    "blurb": "Academic tutors provide instructional support to students in specific academic content areas and help students develop successful study skills. Primary job duties include: • Planning and implementing weekly sessions with students to…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Academic-Tutor--Current-and-Anticipated-Future-Openings-_R0049835-2",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:16:54.298Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0049846",
+    "title": "Ticket Center Assistant (Current and Anticipated Future Openings)",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville, AR",
+    "pay": "$11.00 per hour",
+    "blurb": "The Ticket Center Assistant will provide ticket center staff with assistance in the Razorback Ticket Center. The Ticket Center Assistant will provide ticket center staff with assistance during athletic events, including events held on…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Ticket-Center-Assistant--Current-and-Anticipated-Future-Openings-_R0049846-2",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:16:54.912Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0052745",
+    "title": "Extra Help Assistant- Child Care Aide (Current and Anticipated Future Openings)",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "extra-help",
+    "majors": [
+      "business",
+      "health-education"
+    ],
+    "location": "Fayetteville, AR",
+    "blurb": "The role of the childcare aide/substitute is to supplement the quality of the child care program by assisting in the classroom, kitchen, and administrative offices when needed. The childcare aide/substitute will assist the lead and…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Extra-Help-Assistant--Child-Care-Aide--Current-and-Anticipated-Future-Openings-_R0052745",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:16:52.046Z",
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0054707",
+    "title": "Educational Specialist (Current and Anticipated Future Openings)",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "health-education"
+    ],
+    "location": "Fayetteville",
+    "blurb": "Clinical Specialist are responsible for teaching assigned course(s) in the College of Education and Health Professions. They are responsible for following the direction of the course coordinator in delivery of the course content,…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Educational-Specialist--Current-and-Anticipated-Future-Openings-_R0054707-2",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:16:59.194Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0070288",
+    "title": "Part-Time Safe Ride Support",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville",
+    "blurb": "***Please note - this application is not for a specific position. This posting is used as the initial step to create an account in our system and upload application materials. After your application materials are reviewed, you may be…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Part-Time-Safe-Ride-Support--Various-Positions---Evergreen-_R0070288-2",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:17:00.442Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0070574",
+    "title": "Hourly Bus Operator",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville",
+    "blurb": "The Bus Operator will drive a transit bus on campus and city streets to safely transport members of the campus community and the general public on fixed scheduled bus routes. This position will perform a prescribed pre-operational safety…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Hourly-Bus-Operator--Current-and-Anticipated-Future-Openings---Evergreen-_R0070574",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:16:59.828Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0072557",
+    "title": "Part-Time Parking Services Partner",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville, AR",
+    "pay": "$15.00 per hour",
+    "blurb": "The Part-Time Parking Services Partner is a critical member of the University’s Campus Services Team ensuring the safe and smooth flow of vehicles and our campus community; while responding to real-time opportunities to support campus…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Part-Time-Parking-Services-Partner---Current-and-Anticipated-Future-Openings---Evergreen-_R0072557",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:16:57.191Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0082246",
+    "title": "Part-Time - Seasonal Groundskeeper",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville, AR",
+    "pay": "$15 per hour",
+    "blurb": "The Seasonal Groundskeeper is responsible for maintaining the appearance of outdoor areas throughout Campus from April through September. This includes mowing lawns, weed eating, cleaning flower beds, and using a blower to clear sidewalks…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Part-Time---Seasonal-Groundskeeper_R0082246-2",
+    "source": "workday",
+    "postedAt": "2026-06-06T18:16:57.779Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0084472",
+    "title": "Accounting Assistant",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "business",
+      "social-sciences"
+    ],
+    "location": "Fayetteville, AR",
+    "blurb": "The Accounting Assistant is responsible for managing collection procedures for delinquent accounts on external invoices; managing collection procedures for delinquent accounts on travel and p-card invoices; counseling and providing…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Accounting-Assistant_R0084472",
+    "source": "workday",
+    "postedAt": "2026-06-24T18:16:48.666Z",
+    "tags": [
+      "full time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0087224",
+    "title": "Admissions Clerical Assistant",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "eecs",
+      "business"
+    ],
+    "location": "Fayetteville, AR",
+    "pay": "$16.00 per hour",
+    "blurb": "The Admissions Clerical Assistant is responsible for scanning/validating, entering, maintaining, and updating application/credential data on the institution’s student information system. This position is a temporary position.…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Admissions-Clerical-Assistant_R0087224",
+    "source": "workday",
+    "postedAt": "2026-06-23T18:16:49.677Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0087304",
+    "title": "Administrative Support Assistant",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "business"
+    ],
+    "location": "Fayetteville",
+    "blurb": "The Administrative Support Assistant provides administrative and operational support to the Director of the Office of Program Assessment (PASS) within the Office of the Provost. This position plays an important role in supporting…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Administrative-Support-Assistant_R0087304-1",
+    "source": "workday",
+    "postedAt": "2026-06-30T18:16:43.334Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0087390",
+    "title": "Multimedia Production Assistant",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "business",
+      "arts-humanities"
+    ],
+    "location": "Fayetteville",
+    "pay": "$15.00 per hour",
+    "blurb": "The Multimedia Production Assistant (PA) is a vital role for the audio and video team within the Office of Marketing and Communications. The PA is involved in all stages of the video and audio production process from podcast production and…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Multimedia-Production-Assistant_R0087390",
+    "source": "workday",
+    "postedAt": "2026-06-25T18:16:47.594Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0087653",
+    "title": "Student Financial Services & Records Assistant",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville, AR",
+    "blurb": "The Student Financial Services & Records Assistant supports the Office of Graduate Fellowships and Program Support by processing graduate student travel grant applications in InfoReady and coordinating logistics for the Doctoral Fellowship…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Student-Financial-Services---Records-Assistant_R0087653",
+    "source": "workday",
+    "postedAt": "2026-06-26T18:16:45.792Z",
+    "tags": [
+      "full time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  },
+  {
+    "id": "workday:R0087670",
+    "title": "Hourly Transit Dispatcher",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [],
+    "location": "Fayetteville, AR",
+    "blurb": "The Transit Dispatcher receives radio and/or telephone calls concerning building maintenance, transit operations, emergency situations, or inquiries from the general public. This position interviews callers to obtain information, and…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Hourly-Transit-Dispatcher_R0087670-1",
+    "source": "workday",
+    "postedAt": "2026-07-01T18:16:42.832Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-07-06T18:17:01.466Z",
+    "lastSeenAt": "2026-07-06T18:17:01.466Z",
+    "status": "open"
+  }
+]
