@@ -4,6 +4,7 @@ import { notFound } from "next/navigation";
 import { JobRow } from "@/components/job-row";
 import { LabCard } from "@/components/lab-card";
 import { ClubCard } from "@/components/club-card";
+import { RememberMajor } from "@/components/remember-major";
 import { SectionHeading } from "@/components/section-heading";
 import { ArrowUpRight } from "@/components/icons";
 import { ANY_MAJOR_JOBS, clubsForMajor, jobsTaggedFor, labsForMajor } from "@/lib/data";
@@ -39,6 +40,7 @@ export default async function MajorPage({ params }: { params: Promise<{ slug: st
 
   return (
     <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+      <RememberMajor slug={slug} />
       <p className="kicker">{group.college}</p>
       <h1 className="font-display mt-2 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl">
         For <span className="italic text-cardinal">{group.name}</span> students

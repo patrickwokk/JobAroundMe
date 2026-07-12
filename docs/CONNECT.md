@@ -1,8 +1,16 @@
 # Connect v2 — the Razorback Referral Network blueprint
 
-The pilot runs on GitHub Discussions (free, spam-resistant, zero ops). This document is the
-build plan for when the board outgrows it — measured by: >30 referral asks/month, or students
-asking for company filters.
+The pilot runs as a **dedicated Discord server** (students already live there; real-time;
+identity-light; free at any scale), with GitHub Discussions retained as the searchable public
+archive. Channel map: `#intros`, `#referral-asks`, `#referral-offers`, `#wins`, `#this-week`
+(freshest listings, auto-postable from the RSS feed later).
+
+Setup is a one-time, three-minute owner task: create the server with those five channels,
+create a non-expiring invite, paste it into `DISCORD_INVITE_URL` in `lib/site.ts`, and push —
+the /connect page flips from "opening soon" to "the board is open."
+
+This document is the build plan for when the board outgrows chat — measured by: >30 referral
+asks/month, or students asking for company filters.
 
 ## Product
 
@@ -41,8 +49,10 @@ rejects non-uark signups with an alumni-request path.
 - Referral hand-offs happen in email/DM — the platform never stores resumes long-term.
 - Code of conduct: one strike for recruiters posing as students; permanent ban.
 
-## Why not just Discord?
+## Why Discord first, and what it doesn't solve
 
-Discord is where communities chat; referrals need *searchable, structured, slow* posts with
-accountability. Discussions → purpose-built board is the right ladder. A Discord can complement
-later for social glue.
+Discord wins the pilot because adoption beats architecture: a referral board nobody joins helps
+nobody, and students join Discords daily. What it doesn't give you — searchable slow posts,
+verified campus identity, structured asks — is exactly the v2 list above. The GitHub archive
+covers searchability in the meantime; verification stays social (mods watch for recruiters
+posing as students) until v2 makes it cryptographic.

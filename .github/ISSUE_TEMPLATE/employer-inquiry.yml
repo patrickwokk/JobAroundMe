@@ -1,0 +1,42 @@
+name: "Employer inquiry"
+description: "You hire U of A students or NWA interns and want placement on JobAroundMe (featured listing, sponsored track, or referral-drive sponsorship)."
+title: "Employer inquiry: "
+labels: ["employer-inquiry"]
+body:
+  - type: input
+    id: company
+    attributes:
+      label: Company / organization
+    validations:
+      required: true
+  - type: dropdown
+    id: interest
+    attributes:
+      label: What are you interested in?
+      options:
+        - "Featured listing (one role, one semester)"
+        - "Sponsored career track"
+        - "Referral-drive sponsorship"
+        - "Something else / not sure yet"
+    validations:
+      required: true
+  - type: input
+    id: role
+    attributes:
+      label: The role or program (if applicable)
+      placeholder: "e.g. Summer 2027 software engineering internship, Bentonville"
+    validations:
+      required: false
+  - type: input
+    id: contact
+    attributes:
+      label: Best contact (work email)
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Anything else?
+      description: "Note: student-facing placement only — we don't sell student data or run ads."
+    validations:
+      required: false

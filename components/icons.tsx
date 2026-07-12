@@ -100,6 +100,12 @@ export const Copy = (p: SVGProps<SVGSVGElement>) => (
   </svg>
 );
 
+export const Bookmark = (p: SVGProps<SVGSVGElement>) => (
+  <svg {...base(p)}>
+    <path d="M6.5 4.5A1.5 1.5 0 0 1 8 3h8a1.5 1.5 0 0 1 1.5 1.5V21L12 17.2 6.5 21V4.5Z" />
+  </svg>
+);
+
 export const Signal = (p: SVGProps<SVGSVGElement>) => (
   <svg {...base(p)}>
     <path d="M4 19c0-8.3 6.7-15 15-15" opacity=".35" />

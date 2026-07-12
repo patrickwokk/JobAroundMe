@@ -1,8 +1,16 @@
 /** Repo home — used for "report this listing" issue links and the footer. */
 export const REPO_URL = "https://github.com/patrickwokk/JobAroundMe";
 
-/** The referral board pilot lives on GitHub Discussions (free, spam-resistant). */
+/** GitHub Discussions — kept as the searchable public archive of the referral board. */
 export const DISCUSSIONS_URL = `${REPO_URL}/discussions`;
+
+/**
+ * The Referral Board's dedicated home is a Discord server.
+ * Paste the permanent invite link here once the server exists
+ * (Server Settings → Invites → create a non-expiring invite).
+ * While empty, /connect shows an "opening soon" state.
+ */
+export const DISCORD_INVITE_URL = "";
 
 /** HogSync (CampusGroups) is UofA's official club directory. */
 export function hogsyncUrl(searchTerm: string): string {

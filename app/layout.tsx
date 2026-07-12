@@ -47,6 +47,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-scroll-behavior="smooth">
       <body className={`${fraunces.variable} ${schibsted.variable} ${plexMono.variable} antialiased`}>
+        <noscript>
+          <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
+        </noscript>
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-cardinal focus:px-4 focus:py-2 focus:text-paper"

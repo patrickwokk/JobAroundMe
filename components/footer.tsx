@@ -25,6 +25,8 @@ export function Footer() {
             <li><Link className="link-sweep" href="/tracks">Career tracks</Link></li>
             <li><Link className="link-sweep" href="/connect">Connect &amp; referrals</Link></li>
             <li><Link className="link-sweep" href="/how-it-works">How listings stay fresh</Link></li>
+            <li><Link className="link-sweep" href="/saved">Saved listings</Link></li>
+            <li><Link className="link-sweep" href="/employers">For employers</Link></li>
             <li>
               <a className="link-sweep" href={suggestListingUrl()} target="_blank" rel="noreferrer">
                 Suggest a listing

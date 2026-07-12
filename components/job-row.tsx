@@ -4,6 +4,7 @@ import { relTime } from "@/lib/format";
 import { majorShortName } from "@/lib/majors";
 import { reportFilledUrl } from "@/lib/site";
 import { ArrowUpRight, MapPin } from "@/components/icons";
+import { BookmarkButton } from "@/components/bookmark-button";
 
 const TYPE_LABEL: Record<Job["type"], string> = {
   "part-time": "Part-time",
@@ -45,10 +46,17 @@ function Freshness({ job }: { job: Job }) {
 }
 
 export function JobRow({ job }: { job: Job }) {
+  const isNew =
+    !job.evergreen && REF - Date.parse(job.postedAt ?? job.firstSeenAt) < 7 * 86_400_000;
   return (
     <article className="group relative grid gap-x-8 gap-y-3 border-b border-line py-6 sm:grid-cols-[1fr_11rem]">
       <div>
         <div className="flex flex-wrap items-center gap-2">
+          {isNew ? (
+            <span className="bg-cardinal px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-paper">
+              New
+            </span>
+          ) : null}
           <span className="rounded-full border border-ink/25 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider">
             {TYPE_LABEL[job.type]}
           </span>
@@ -83,7 +91,8 @@ export function JobRow({ job }: { job: Job }) {
       </div>
       <div className="flex items-start justify-between gap-2 sm:flex-col sm:items-end sm:text-right">
         <p className="font-mono text-sm font-medium">{job.pay ?? ""}</p>
-        <div className="sm:mt-auto">
+        <div className="flex items-center gap-3 sm:mt-auto sm:flex-col sm:items-end sm:gap-2">
+          <BookmarkButton jobId={job.id} title={job.title} />
           <a
             href={reportFilledUrl(job.id, job.title)}
             target="_blank"
