@@ -1,5 +1,27 @@
 [
   {
+    "id": "workday:R0091022",
+    "title": "Work Study - Ceramics Studio Assistant",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "work-study",
+    "majors": [
+      "arts-humanities"
+    ],
+    "location": "Fayetteville",
+    "pay": "$15/hr",
+    "blurb": "The Ceramics Studio Assistant will contributes to a safe and productive studio environment in the Ceramics media area. Through weekly shifts, the assistant will assist with the maintenance and safe use of all Ceramic studio work spaces .…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Work-Study---Ceramics-Studio-Assistant_R0091022",
+    "source": "workday",
+    "postedAt": "2026-09-11T13:48:38.069Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-09-12T13:49:14.138Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
+    "status": "open"
+  },
+  {
     "id": "workday:R0090963",
     "title": "Student Conduct Records Analyst",
     "org": "University of Arkansas",
@@ -13,12 +35,12 @@
     "blurb": "The Student Conduct Records Analyst keeps the Office of Student Accountability's student conduct records accurate, secure, and easy to report on. This is an administrative support role with substantial student records and data analyst…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Student-Conduct-Records-Analyst_R0090963",
     "source": "workday",
-    "postedAt": "2026-09-08T14:42:32.261Z",
+    "postedAt": "2026-09-08T13:48:42.687Z",
     "tags": [
       "full time"
     ],
     "firstSeenAt": "2026-09-09T14:56:13.065Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -37,12 +59,12 @@
     "blurb": "The Fulbright College of Arts and Sciences seeks to hire an intern to work with its Marketing & Communications team (MARCOMM), supporting web design and content creation. Interns will work alongside the office’s full-time staff members to…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Hourly-Fulbright-MARCOMM-Intern---Web-Design_R0091232",
     "source": "workday",
-    "postedAt": "2026-09-08T14:42:29.413Z",
+    "postedAt": "2026-09-08T13:48:41.258Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-09-09T14:56:13.065Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -60,12 +82,12 @@
     "blurb": "The Fulbright College of Arts and Sciences seeks to hire an intern to work with its Marketing & Communications team (MARCOMM), graphic design and content creation. Interns will work alongside the office’s full-time staff members to…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Hourly-Fulbright-MARCOMM-Intern---Graphic-Design_R0091233",
     "source": "workday",
-    "postedAt": "2026-09-08T14:42:31.579Z",
+    "postedAt": "2026-09-08T13:48:42.140Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-09-09T14:56:13.065Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -84,12 +106,12 @@
     "blurb": "The Prototyping Lab Intern assists with the development of the Bentonville prototyping lab and connects early-stage outdoor recreation entrepreneurs with university industrial design and prototyping expertise. Regular, reliable, and…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Prototyping-Lab-Intern_R0091103-1",
     "source": "workday",
-    "postedAt": "2026-09-08T14:42:34.355Z",
+    "postedAt": "2026-09-08T13:48:44.440Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-09-08T14:50:10.377Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -106,12 +128,12 @@
     "blurb": "The Fulbright College of Arts and Sciences seeks a creative, motivated, and media-savvy Social Media Content Creator Intern to join our communications team. This intern will play an active role in developing engaging social media content…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Hourly-Communications-and-Creative-Services-Intern---Social-Media-and-Content-Creator_R0091080",
     "source": "workday",
-    "postedAt": "2026-09-04T14:42:35.862Z",
+    "postedAt": "2026-09-04T13:48:45.501Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-09-05T13:37:12.278Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -156,7 +178,7 @@
     ],
     "firstSeenAt": "2026-09-02T14:49:15.510Z",
     "lastSeenAt": "2026-09-07T16:12:48.973Z",
-    "status": "open"
+    "status": "stale"
   },
   {
     "id": "workday:R0090769",
@@ -171,12 +193,12 @@
     "blurb": "The Razorback Analytics Fellowship provides University of Arkansas students with hands-on, part-time experience in applied data analytics through real-world projects that support University operations. Fellows partner with campus…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Razorback-Analytic-Fellow-2_R0090769",
     "source": "workday",
-    "postedAt": "2026-09-01T14:42:38.281Z",
+    "postedAt": "2026-09-01T13:48:47.605Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-09-02T14:49:15.510Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -330,7 +352,7 @@
     ],
     "firstSeenAt": "2026-08-25T11:18:37.654Z",
     "lastSeenAt": "2026-09-07T16:12:48.973Z",
-    "status": "open"
+    "status": "stale"
   },
   {
     "id": "workday:R0090129",
@@ -711,12 +733,12 @@
     "blurb": "The Athletic Facilities Service Assistant is responsible for general power washing, painting, and backpack blowing in and around athletic facilities. This position will also provide general labor within athletic facilities as assigned.…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Athletic-Facilities-Service-Assistant_R0089231",
     "source": "workday",
-    "postedAt": "2026-08-20T14:42:42.625Z",
+    "postedAt": "2026-08-20T13:48:50.741Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-31T12:51:21.700Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1297,7 +1319,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1318,7 +1340,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1341,7 +1363,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1364,7 +1386,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1383,7 +1405,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1406,7 +1428,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1427,7 +1449,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1447,7 +1469,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1472,7 +1494,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1494,7 +1516,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1518,7 +1540,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1537,7 +1559,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1558,7 +1580,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1581,7 +1603,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1603,7 +1625,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1623,7 +1645,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1645,7 +1667,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1667,7 +1689,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1692,7 +1714,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1714,7 +1736,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1737,7 +1759,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1760,7 +1782,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1776,9 +1798,9 @@
     "blurb": "RazorTemps is our on campus Temporary Staffing team at the University of Arkansas, Fayetteville. Our team works in central HR, and we place both students and non-students into temporary positions on the Fayetteville campus. RazorTemps…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/RazorTemps---Temporary-Positions--Anticipated-Current-and-Future-Openings-_R0004720",
     "source": "workday",
-    "postedAt": "2026-08-12T14:42:51.895Z",
+    "postedAt": "2026-08-13T13:48:59.147Z",
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1793,12 +1815,12 @@
     "blurb": "Academic tutors provide instructional support to students in specific academic content areas and help students develop successful study skills. Primary job duties include: • Planning and implementing weekly sessions with students to…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Academic-Tutor--Current-and-Anticipated-Future-Openings-_R0049835-2",
     "source": "workday",
-    "postedAt": "2026-08-12T14:42:47.624Z",
+    "postedAt": "2026-08-13T13:48:55.115Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1813,12 +1835,12 @@
     "blurb": "The Ticket Center Assistant will provide ticket center staff with assistance in the Razorback Ticket Center. The Ticket Center Assistant will provide ticket center staff with assistance during athletic events, including events held on…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Ticket-Center-Assistant--Current-and-Anticipated-Future-Openings-_R0049846-2",
     "source": "workday",
-    "postedAt": "2026-08-12T14:42:48.121Z",
+    "postedAt": "2026-08-13T13:48:55.674Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1835,9 +1857,9 @@
     "blurb": "The role of the childcare aide/substitute is to supplement the quality of the child care program by assisting in the classroom, kitchen, and administrative offices when needed. The childcare aide/substitute will assist the lead and…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Extra-Help-Assistant--Child-Care-Aide--Current-and-Anticipated-Future-Openings-_R0052745",
     "source": "workday",
-    "postedAt": "2026-08-12T14:42:45.846Z",
+    "postedAt": "2026-08-13T13:48:53.356Z",
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1853,12 +1875,12 @@
     "blurb": "Clinical Specialist are responsible for teaching assigned course(s) in the College of Education and Health Professions. They are responsible for following the direction of the course coordinator in delivery of the course content,…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Educational-Specialist--Current-and-Anticipated-Future-Openings-_R0054707-2",
     "source": "workday",
-    "postedAt": "2026-08-12T14:42:49.784Z",
+    "postedAt": "2026-08-13T13:48:57.436Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1872,12 +1894,12 @@
     "blurb": "***Please note - this application is not for a specific position. This posting is used as the initial step to create an account in our system and upload application materials. After your application materials are reviewed, you may be…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Part-Time-Safe-Ride-Support--Various-Positions---Evergreen-_R0070288-2",
     "source": "workday",
-    "postedAt": "2026-08-12T14:42:51.283Z",
+    "postedAt": "2026-08-13T13:48:58.569Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1891,12 +1913,12 @@
     "blurb": "The Bus Operator will drive a transit bus on campus and city streets to safely transport members of the campus community and the general public on fixed scheduled bus routes. This position will perform a prescribed pre-operational safety…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Hourly-Bus-Operator--Current-and-Anticipated-Future-Openings---Evergreen-_R0070574",
     "source": "workday",
-    "postedAt": "2026-08-12T14:42:50.412Z",
+    "postedAt": "2026-08-13T13:48:58.005Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
@@ -1911,12 +1933,12 @@
     "blurb": "The Part-Time Parking Services Partner is a critical member of the University’s Campus Services Team ensuring the safe and smooth flow of vehicles and our campus community; while responding to real-time opportunities to support campus…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Part-Time-Parking-Services-Partner---Current-and-Anticipated-Future-Openings---Evergreen-_R0072557",
     "source": "workday",
-    "postedAt": "2026-08-12T14:42:49.238Z",
+    "postedAt": "2026-08-13T13:48:56.893Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-09-11T14:43:13.550Z",
+    "lastSeenAt": "2026-09-12T13:49:14.138Z",
     "status": "open"
   },
   {
