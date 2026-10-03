@@ -1,5 +1,27 @@
 [
   {
+    "id": "workday:R0092171",
+    "title": "RazorTemps - Administrative Assistant, Imaging",
+    "org": "University of Arkansas",
+    "category": "on-campus",
+    "type": "part-time",
+    "majors": [
+      "business"
+    ],
+    "location": "Fayetteville",
+    "pay": "$18.00 per hour",
+    "blurb": "Sourcing obituary documents via the Arkansas Democrat-Gazette and Insightful news services. Making biographical and relationship updates in the Advancement CRM. Using AlumniFinder and other database resources to confirm the deceased. Daily…",
+    "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/RazorTemps---Administrative-Assistant--Imaging_R0092171-1",
+    "source": "workday",
+    "postedAt": "2026-10-02T14:59:12.341Z",
+    "tags": [
+      "part time"
+    ],
+    "firstSeenAt": "2026-10-03T14:59:52.653Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
+    "status": "open"
+  },
+  {
     "id": "workday:R0092186",
     "title": "Human Resources Support Assistant",
     "org": "University of Arkansas",
@@ -12,12 +34,12 @@
     "blurb": "The Student Human Resources Support Assistant works in the University of Arkansas Central Human Resources offices and supports multiple areas of Human Resources. This role helps create a welcoming and professional experience for employees,…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Human-Resources-Support-Assistant_R0092186",
     "source": "workday",
-    "postedAt": "2026-10-01T16:24:54.339Z",
+    "postedAt": "2026-10-01T14:59:13.366Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-10-01T17:12:53.881Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -34,12 +56,12 @@
     "blurb": "This position provides support to the Human Resources Department, specifically the Classification and Compensation team. Responsibilities include conducting research, compiling and analyzing data, and assisting with daily operations and…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/RazorTemp---Human-Resources--Hourly-Support_R0091858",
     "source": "workday",
-    "postedAt": "2026-09-25T16:25:03.021Z",
+    "postedAt": "2026-09-25T14:59:19.921Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-09-26T14:49:31.178Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -56,12 +78,12 @@
     "blurb": "Answer department phones and emails, send package pickup notifications, manage 25Live room reservations, and assist with the setup and teardown of receptions and faculty events. Provide administrative support for daily departmental…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/RazorTemps--CHEM-Admin-Support-Assistant_R0091903-1",
     "source": "workday",
-    "postedAt": "2026-09-25T16:25:06.844Z",
+    "postedAt": "2026-09-25T14:59:22.702Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-09-26T14:49:31.178Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -75,12 +97,12 @@
     "blurb": "The Office of Entrepreneurship and Innovation (OEI) is seeking an experienced professional to serve as Senior Program Manager of Student Entrepreneurship Program. This position leads a year-round portfolio of programs and competitions…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Senior-Program-Manager--Student-Entrepreneurship-Program_R0091968",
     "source": "workday",
-    "postedAt": "2026-09-25T16:25:04.780Z",
+    "postedAt": "2026-09-25T14:59:21.056Z",
     "tags": [
       "full time"
     ],
     "firstSeenAt": "2026-09-26T14:49:31.178Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -116,12 +138,12 @@
     "blurb": "The Classroom Technology Support Technician provides frontline support for classroom technology in WCOB, WJWH, RCED, JBHT, BREW, and the McMillon Studio in HAPG. This is a hands-on role ideal for current university students who are…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Walton-Classroom-Tech-Support_R0091824-2",
     "source": "workday",
-    "postedAt": "2026-09-23T16:25:09.061Z",
+    "postedAt": "2026-09-23T14:59:24.762Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-09-23T15:14:53.861Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -475,7 +497,7 @@
     ],
     "firstSeenAt": "2026-08-27T20:52:24.427Z",
     "lastSeenAt": "2026-09-28T18:19:26.267Z",
-    "status": "open"
+    "status": "stale"
   },
   {
     "id": "workday:R0090488",
@@ -1528,7 +1550,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1549,7 +1571,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1572,7 +1594,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1595,7 +1617,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1614,7 +1636,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1637,7 +1659,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1658,7 +1680,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1678,7 +1700,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1703,7 +1725,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1725,7 +1747,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1749,7 +1771,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1768,7 +1790,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1789,7 +1811,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1812,7 +1834,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1834,7 +1856,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1854,7 +1876,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1876,7 +1898,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1898,7 +1920,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1923,7 +1945,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1945,7 +1967,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1968,7 +1990,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -1991,7 +2013,7 @@
     "source": "curated",
     "evergreen": true,
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -2007,9 +2029,9 @@
     "blurb": "RazorTemps is our on campus Temporary Staffing team at the University of Arkansas, Fayetteville. Our team works in central HR, and we place both students and non-students into temporary positions on the Fayetteville campus. RazorTemps…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/RazorTemps---Temporary-Positions--Anticipated-Current-and-Future-Openings-_R0004720",
     "source": "workday",
-    "postedAt": "2026-09-02T16:25:24.516Z",
+    "postedAt": "2026-09-03T14:59:37.634Z",
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -2024,12 +2046,12 @@
     "blurb": "Academic tutors provide instructional support to students in specific academic content areas and help students develop successful study skills. Primary job duties include: • Planning and implementing weekly sessions with students to…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Academic-Tutor--Current-and-Anticipated-Future-Openings-_R0049835-2",
     "source": "workday",
-    "postedAt": "2026-09-02T16:25:18.397Z",
+    "postedAt": "2026-09-03T14:59:32.718Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -2044,12 +2066,12 @@
     "blurb": "The Ticket Center Assistant will provide ticket center staff with assistance in the Razorback Ticket Center. The Ticket Center Assistant will provide ticket center staff with assistance during athletic events, including events held on…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Ticket-Center-Assistant--Current-and-Anticipated-Future-Openings-_R0049846-2",
     "source": "workday",
-    "postedAt": "2026-09-02T16:25:19.066Z",
+    "postedAt": "2026-09-03T14:59:33.396Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -2066,9 +2088,9 @@
     "blurb": "The role of the childcare aide/substitute is to supplement the quality of the child care program by assisting in the classroom, kitchen, and administrative offices when needed. The childcare aide/substitute will assist the lead and…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Extra-Help-Assistant--Child-Care-Aide--Current-and-Anticipated-Future-Openings-_R0052745",
     "source": "workday",
-    "postedAt": "2026-09-02T16:25:16.880Z",
+    "postedAt": "2026-09-03T14:59:31.324Z",
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -2084,12 +2106,12 @@
     "blurb": "Clinical Specialist are responsible for teaching assigned course(s) in the College of Education and Health Professions. They are responsible for following the direction of the course coordinator in delivery of the course content,…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Educational-Specialist--Current-and-Anticipated-Future-Openings-_R0054707-2",
     "source": "workday",
-    "postedAt": "2026-09-02T16:25:22.281Z",
+    "postedAt": "2026-09-03T14:59:35.698Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -2103,12 +2125,12 @@
     "blurb": "***Please note - this application is not for a specific position. This posting is used as the initial step to create an account in our system and upload application materials. After your application materials are reviewed, you may be…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Part-Time-Safe-Ride-Support--Various-Positions---Evergreen-_R0070288-2",
     "source": "workday",
-    "postedAt": "2026-09-02T16:25:23.748Z",
+    "postedAt": "2026-09-03T14:59:36.956Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -2122,12 +2144,12 @@
     "blurb": "The Bus Operator will drive a transit bus on campus and city streets to safely transport members of the campus community and the general public on fixed scheduled bus routes. This position will perform a prescribed pre-operational safety…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville/Hourly-Bus-Operator--Current-and-Anticipated-Future-Openings---Evergreen-_R0070574",
     "source": "workday",
-    "postedAt": "2026-09-02T16:25:22.970Z",
+    "postedAt": "2026-09-03T14:59:36.314Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
@@ -2142,12 +2164,12 @@
     "blurb": "The Part-Time Parking Services Partner is a critical member of the University’s Campus Services Team ensuring the safe and smooth flow of vehicles and our campus community; while responding to real-time opportunities to support campus…",
     "applyUrl": "https://uasys.wd5.myworkdayjobs.com/UAF_External_Career_Site/job/Fayetteville-AR/Part-Time-Parking-Services-Partner---Current-and-Anticipated-Future-Openings---Evergreen-_R0072557",
     "source": "workday",
-    "postedAt": "2026-09-02T16:25:21.517Z",
+    "postedAt": "2026-09-03T14:59:35.073Z",
     "tags": [
       "part time"
     ],
     "firstSeenAt": "2026-07-06T18:17:01.466Z",
-    "lastSeenAt": "2026-10-02T16:25:46.865Z",
+    "lastSeenAt": "2026-10-03T14:59:52.653Z",
     "status": "open"
   },
   {
