@@ -1,0 +1,30 @@
+name: CI
+
+# Checks every pull request (and non-main branch) so a contribution can't break
+# the live site. Data-only bot commits to main skip this — deploy.yml tests those.
+on:
+  pull_request:
+  push:
+    branches-ignore: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+
+      - uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: "1.3.10"
+
+      - run: bun install --frozen-lockfile
+
+      - name: Tests — pipeline logic and curated data validation
+        run: bun test
+
+      - name: Typecheck, lint and build
+        run: bun run build

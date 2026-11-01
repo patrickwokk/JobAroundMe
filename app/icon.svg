@@ -1,4 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="8" fill="#9d2235"/>
-  <text x="32" y="46" font-family="Georgia, 'Times New Roman', serif" font-size="40" font-weight="900" font-style="italic" text-anchor="middle" fill="#faf6ef">Ja</text>
+  <rect width="64" height="64" rx="15" fill="#9d2235"/><g transform="translate(0 0) scale(1)">
+    <circle cx="35" cy="15" r="8" fill="none" stroke="#fff" stroke-opacity="0.5" stroke-width="2"/>
+    <circle cx="35" cy="15" r="4.25" fill="#fff"/>
+    <path d="M35 31v15a9 9 0 0 1-9 9h-3" fill="none" stroke="#fff" stroke-width="7.5" stroke-linecap="round"/>
+  </g>
 </svg>

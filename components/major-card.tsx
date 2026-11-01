@@ -1,37 +1,28 @@
 import Link from "next/link";
 import type { MajorGroup } from "@/lib/types";
-import { ArrowUpRight } from "@/components/icons";
+import { ui } from "@/lib/ui";
+import { ArrowRight } from "@/components/icons";
 
 export function MajorCard({
   group,
-  index,
   counts,
 }: {
   group: MajorGroup;
-  index: number;
   counts: { jobs: number; labs: number };
 }) {
   return (
-    <Link
-      href={`/majors/${group.slug}`}
-      className="lift group flex flex-col justify-between border border-line bg-paper p-5 hover:border-line-strong"
-    >
+    <Link href={`/majors/${group.slug}`} className={`group flex h-full flex-col justify-between p-5 ${ui.card} ${ui.cardHover}`}>
       <div>
-        <div className="flex items-baseline justify-between">
-          <span className="font-mono text-[11px] tracking-wider text-ink-faint">
-            {String(index + 1).padStart(2, "0")}
-          </span>
-          <span className="font-mono text-[10px] uppercase tracking-wider text-cardinal">{group.shortName}</span>
-        </div>
-        <h3 className="font-display mt-3 text-lg font-bold leading-tight tracking-tight">
-          {group.name}
-          <ArrowUpRight className="ml-1 inline size-4 text-cardinal opacity-0 transition-opacity group-hover:opacity-100" />
-        </h3>
-        <p className="mt-1 text-xs text-ink-faint">{group.college}</p>
+        <p className="text-xs font-semibold tracking-wide text-accent">{group.shortName}</p>
+        <h3 className="mt-2 text-base font-semibold leading-snug tracking-[-0.01em]">{group.name}</h3>
+        <p className="mt-1 text-xs text-fg-subtle">{group.college}</p>
       </div>
-      <p className="mt-4 font-mono text-[11px] tracking-wide text-ink-soft">
-        {counts.jobs} listing{counts.jobs === 1 ? "" : "s"} · {counts.labs} lab{counts.labs === 1 ? "" : "s"}
-      </p>
+      <div className="mt-5 flex items-center justify-between text-xs text-fg-muted">
+        <span className="tabular-nums">
+          {counts.jobs} listing{counts.jobs === 1 ? "" : "s"} · {counts.labs} lab{counts.labs === 1 ? "" : "s"}
+        </span>
+        <ArrowRight className="size-4 text-fg-subtle transition-transform group-hover:translate-x-0.5 group-hover:text-accent" />
+      </div>
     </Link>
   );
 }

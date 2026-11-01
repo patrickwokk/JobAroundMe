@@ -13,7 +13,7 @@ import type { ScrapedJob } from "../lib/store";
 
 const BASE = "https://uasys.wd5.myworkdayjobs.com";
 const CXS = `${BASE}/wday/cxs/uasys/UAF_External_Career_Site`;
-const UA = "JobAroundMe/1.0 (student job aggregator; github.com/JobAroundMe)";
+const UA = "Jam/1.0 (Job Around Me student job aggregator)";
 
 interface ListPosting {
   title: string;
@@ -32,8 +32,24 @@ interface JobDetail {
   location?: string;
 }
 
-const STUDENT_TITLE = /extra help|hourly|student|work[- ]study|part[- ]time|temporary|intern(?!al)|assistant|aide|tutor|grader/i;
+const STUDENT_TITLE = /extra help|hourly|student|work[- ]study|part[- ]time|temporary|\bintern\b|assistant|aide|tutor|grader/i;
 const NEVER = /faculty|professor|instructor|lecturer|adjunct|postdoc|post-doc|dean|provost|chancellor|director|coach|physician|full[- ]time/i;
+/** Explicit hourly/student markers that make even a "full time" posting student-holdable. */
+const HOURLY_MARKER = /extra help|hourly|student (?:worker|assistant|employee|technician|tech|aide)|work[- ]study|\bintern\b|graduate assistant|razortemps/i;
+
+/**
+ * Could a currently enrolled student hold this? Part-time roles qualify;
+ * full-time staff roles don't (an "Accounting Assistant III" is a career job,
+ * not a student job) unless the title explicitly marks them hourly/student.
+ * Exported so the refresh can re-apply it to existing data whenever it tightens.
+ */
+export function isStudentHoldable(title: string, timeType?: string): boolean {
+  if (NEVER.test(title)) return false;
+  const t = timeType?.toLowerCase();
+  if (t === "full time") return HOURLY_MARKER.test(title);
+  if (t === "part time") return true;
+  return STUDENT_TITLE.test(title);
+}
 
 async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
   const res = await fetch(url, {
@@ -132,10 +148,7 @@ export async function scrapeWorkday(): Promise<ScrapedJob[]> {
       continue;
     }
 
-    const isPartTime = detail.timeType?.toLowerCase() === "part time";
-    const studentTitled = STUDENT_TITLE.test(p.title);
-    if (!isPartTime && !studentTitled) continue;
-    if (NEVER.test(detail.title)) continue;
+    if (!isStudentHoldable(detail.title, detail.timeType)) continue;
 
     const description = detail.jobDescription ?? "";
     const reqId = detail.jobReqId ?? p.bulletFields?.[0] ?? p.externalPath;

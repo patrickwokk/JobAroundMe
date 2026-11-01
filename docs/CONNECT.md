@@ -1,9 +1,9 @@
-# Connect v2 — the Razorback Referral Network blueprint
+# Referral Board v2 — blueprint
 
-The pilot runs as a **dedicated Discord server** (students already live there; real-time;
-identity-light; free at any scale), with GitHub Discussions retained as the searchable public
-archive. Channel map: `#intros`, `#referral-asks`, `#referral-offers`, `#wins`, `#this-week`
-(freshest listings, auto-postable from the RSS feed later).
+The Jam Referral Board launches as a **dedicated Discord server** (students already live there;
+real-time; identity-light; free at any scale). It is intentionally not tied to GitHub or to any
+maintainer's personal account. Channel map: `#intros`, `#referral-asks`, `#referral-offers`,
+`#wins`, `#this-week` (freshest listings, auto-postable from the RSS feed later).
 
 Setup is a one-time, three-minute owner task: create the server with those five channels,
 create a non-expiring invite, paste it into `DISCORD_INVITE_URL` in `lib/site.ts`, and push —
@@ -53,6 +53,6 @@ rejects non-uark signups with an alumni-request path.
 
 Discord wins the pilot because adoption beats architecture: a referral board nobody joins helps
 nobody, and students join Discords daily. What it doesn't give you — searchable slow posts,
-verified campus identity, structured asks — is exactly the v2 list above. The GitHub archive
-covers searchability in the meantime; verification stays social (mods watch for recruiters
-posing as students) until v2 makes it cryptographic.
+verified campus identity, structured asks — is exactly the v2 list above. Until then, pinned
+"best of" threads cover searchability, and verification stays social (mods watch for recruiters
+posing as students).

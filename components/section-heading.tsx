@@ -3,22 +3,22 @@ import type { ReactNode } from "react";
 export function SectionHeading({
   kicker,
   title,
+  description,
   aside,
 }: {
   kicker: string;
   title: ReactNode;
+  description?: ReactNode;
   aside?: ReactNode;
 }) {
   return (
-    <div className="mb-8">
-      <div className="flex flex-wrap items-end justify-between gap-x-6 gap-y-2">
-        <div>
-          <p className="kicker">{kicker}</p>
-          <h2 className="font-display mt-2 text-3xl font-black tracking-tight sm:text-4xl">{title}</h2>
-        </div>
-        {aside ? <div className="pb-1 text-sm text-ink-soft">{aside}</div> : null}
+    <div className="mb-8 flex flex-wrap items-end justify-between gap-x-8 gap-y-3">
+      <div className="max-w-2xl">
+        <p className="text-sm font-semibold text-accent">{kicker}</p>
+        <h2 className="mt-1.5 text-2xl font-bold tracking-[-0.025em] sm:text-3xl">{title}</h2>
+        {description ? <p className="mt-2 leading-relaxed text-fg-muted">{description}</p> : null}
       </div>
-      <div className="rule-dotted mt-5" />
+      {aside ? <div className="text-sm">{aside}</div> : null}
     </div>
   );
 }

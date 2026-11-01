@@ -4,6 +4,8 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { Lab } from "@/lib/types";
 import { META } from "@/lib/data";
 import { isRecent } from "@/lib/format";
+import { ui } from "@/lib/ui";
+import { Badge } from "@/components/badge";
 import { ArrowUpRight, Check, Copy, Mail, Signal, XMark } from "@/components/icons";
 
 const REF = Date.parse(META.lastRefreshed);
@@ -41,94 +43,98 @@ ${major || "[major]"} · University of Arkansas`;
   return { subject, body };
 }
 
+function CopyButton({ text, label }: { text: string; label: string }) {
+  const [copied, setCopied] = useState(false);
+  return (
+    <button
+      type="button"
+      onClick={async () => {
+        try {
+          await navigator.clipboard.writeText(text);
+          setCopied(true);
+          setTimeout(() => setCopied(false), 1600);
+        } catch {
+          /* clipboard unavailable — the text is still selectable */
+        }
+      }}
+      className="inline-flex items-center gap-1 rounded-md px-2 py-1 text-xs font-medium text-accent transition-colors hover:bg-brand-wash"
+      aria-label={`Copy ${label}`}
+    >
+      {copied ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}
+      {copied ? "Copied" : "Copy"}
+    </button>
+  );
+}
+
 function ComposerDialog({ lab, onClose }: { lab: Lab; onClose: () => void }) {
+  const ref = useRef<HTMLDialogElement>(null);
   const [name, setName] = useState("");
   const [major, setMajor] = useState("");
   const [year, setYear] = useState("sophomore");
   const [hook, setHook] = useState("");
-  const [copied, setCopied] = useState<"subject" | "body" | null>(null);
-  const closeRef = useRef<HTMLButtonElement>(null);
 
+  // Native modal: focus trap, Escape, and inert background for free.
+  // (No close() in cleanup — StrictMode's double effect would close it at once.)
   useEffect(() => {
-    closeRef.current?.focus();
-    const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
-    document.addEventListener("keydown", onKey);
-    document.body.style.overflow = "hidden";
-    return () => {
-      document.removeEventListener("keydown", onKey);
-      document.body.style.overflow = "";
-    };
-  }, [onClose]);
+    const d = ref.current;
+    if (d && !d.open) d.showModal();
+  }, []);
 
   const { subject, body } = useMemo(() => draftEmail(lab, name, major, year, hook), [lab, name, major, year, hook]);
-
-  async function copy(text: string, which: "subject" | "body") {
-    try {
-      await navigator.clipboard.writeText(text);
-      setCopied(which);
-      setTimeout(() => setCopied(null), 1600);
-    } catch {
-      /* clipboard unavailable — user can select manually */
-    }
-  }
+  const field = "block text-sm";
+  const label = "mb-1 block text-xs font-medium text-fg-muted";
 
   return (
-    <div
-      className="fixed inset-0 z-50 flex items-end justify-center bg-ink/50 p-0 sm:items-center sm:p-6"
-      onClick={onClose}
-      role="dialog"
-      aria-modal="true"
+    <dialog
+      ref={ref}
+      onClose={onClose}
+      onClick={(e) => e.target === ref.current && ref.current?.close()}
       aria-label={`Draft an intro email to ${lab.name}`}
+      className="m-auto max-h-[92vh] w-[min(42rem,calc(100%-1.5rem))] overflow-y-auto rounded-2xl border border-line bg-surface p-0 text-fg shadow-[var(--elev-2)]"
     >
-      <div
-        className="max-h-[92vh] w-full max-w-2xl overflow-y-auto border-t-4 border-cardinal bg-paper p-5 shadow-2xl sm:border-4 sm:border-ink sm:p-7"
-        onClick={(e) => e.stopPropagation()}
-      >
+      <div className="p-5 sm:p-7">
         <div className="flex items-start justify-between gap-4">
           <div>
-            <p className="kicker">Draft an intro email</p>
-            <h3 className="font-display mt-1 text-2xl font-black tracking-tight">{lab.name}</h3>
-            <p className="mt-0.5 text-sm text-ink-soft">
+            <p className={ui.kicker}>Draft an intro email</p>
+            <h3 className="mt-1 text-xl font-bold tracking-tight">{lab.name}</h3>
+            <p className="mt-0.5 text-sm text-fg-muted">
               {lab.pi ? `PI: ${lab.pi} · ` : ""}
               {lab.department}
             </p>
           </div>
           <button
-            ref={closeRef}
-            onClick={onClose}
+            type="button"
+            onClick={() => ref.current?.close()}
             aria-label="Close"
-            className="border border-line-strong p-1.5 text-ink-soft hover:border-ink hover:text-ink"
+            className="inline-flex size-8 shrink-0 items-center justify-center rounded-lg text-fg-muted transition-colors hover:bg-muted hover:text-fg"
           >
             <XMark className="size-4" />
           </button>
         </div>
 
-        <div className="mt-5 grid gap-3 sm:grid-cols-2">
-          <label className="text-sm">
-            <span className="font-mono text-[11px] uppercase tracking-wider text-ink-soft">Your name</span>
+        <div className="mt-5 grid gap-3 sm:grid-cols-3">
+          <label className={field}>
+            <span className={label}>Your name</span>
             <input
+              autoFocus
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="mt-1 w-full border border-line-strong bg-paper px-3 py-2 text-sm focus:border-ink"
-              placeholder="Alex Razorback"
+              className={ui.input}
+              placeholder="Jordan Lee"
             />
           </label>
-          <label className="text-sm">
-            <span className="font-mono text-[11px] uppercase tracking-wider text-ink-soft">Your major</span>
+          <label className={field}>
+            <span className={label}>Your major</span>
             <input
               value={major}
               onChange={(e) => setMajor(e.target.value)}
-              className="mt-1 w-full border border-line-strong bg-paper px-3 py-2 text-sm focus:border-ink"
+              className={ui.input}
               placeholder="Computer Engineering"
             />
           </label>
-          <label className="text-sm">
-            <span className="font-mono text-[11px] uppercase tracking-wider text-ink-soft">Year</span>
-            <select
-              value={year}
-              onChange={(e) => setYear(e.target.value)}
-              className="mt-1 w-full border border-line-strong bg-paper px-3 py-2 text-sm focus:border-ink"
-            >
+          <label className={field}>
+            <span className={label}>Year</span>
+            <select value={year} onChange={(e) => setYear(e.target.value)} className={ui.input}>
               {["freshman", "sophomore", "junior", "senior", "master's student"].map((y) => (
                 <option key={y} value={y}>
                   {y}
@@ -136,55 +142,42 @@ function ComposerDialog({ lab, onClose }: { lab: Lab; onClose: () => void }) {
               ))}
             </select>
           </label>
-          <label className="text-sm sm:col-span-2">
-            <span className="font-mono text-[11px] uppercase tracking-wider text-ink-soft">
-              Why you? (one sentence — a course, project, or skill)
-            </span>
+          <label className={`${field} sm:col-span-3`}>
+            <span className={label}>Why you? One sentence — a course, project, or skill</span>
             <input
               value={hook}
               onChange={(e) => setHook(e.target.value)}
-              className="mt-1 w-full border border-line-strong bg-paper px-3 py-2 text-sm focus:border-ink"
+              className={ui.input}
               placeholder="I earned an A in Signals & Systems and build audio DSP projects in Python."
             />
           </label>
         </div>
 
         <div className="mt-5 space-y-3">
-          <div className="border border-line bg-paper-2 p-3">
+          <div className="rounded-xl border border-line bg-subtle p-3.5">
             <div className="flex items-center justify-between gap-3">
-              <p className="font-mono text-xs text-ink-soft">Subject</p>
-              <button
-                onClick={() => copy(subject, "subject")}
-                className="inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-wider text-cardinal hover:underline"
-              >
-                {copied === "subject" ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}
-                {copied === "subject" ? "Copied" : "Copy"}
-              </button>
+              <p className="text-xs font-medium text-fg-subtle">Subject</p>
+              <CopyButton text={subject} label="subject" />
             </div>
             <p className="mt-1 text-sm font-medium">{subject}</p>
           </div>
-          <div className="border border-line bg-paper-2 p-3">
+          <div className="rounded-xl border border-line bg-subtle p-3.5">
             <div className="flex items-center justify-between gap-3">
-              <p className="font-mono text-xs text-ink-soft">Body</p>
-              <button
-                onClick={() => copy(body, "body")}
-                className="inline-flex items-center gap-1 font-mono text-[11px] uppercase tracking-wider text-cardinal hover:underline"
-              >
-                {copied === "body" ? <Check className="size-3.5" /> : <Copy className="size-3.5" />}
-                {copied === "body" ? "Copied" : "Copy"}
-              </button>
+              <p className="text-xs font-medium text-fg-subtle">Body</p>
+              <CopyButton text={body} label="email body" />
             </div>
-            <pre className="mt-2 whitespace-pre-wrap font-sans text-sm leading-relaxed text-ink">{body}</pre>
+            <pre className="mt-2 whitespace-pre-wrap font-sans text-sm leading-relaxed">{body}</pre>
           </div>
         </div>
 
-        <ul className="mt-5 space-y-1.5 text-xs leading-relaxed text-ink-soft">
-          <li>· Find the professor&apos;s email on the lab site or the U of A directory — never mass-email.</li>
-          <li>· Reference one specific paper or project; it&apos;s the difference between deleted and answered.</li>
-          <li>· Attach a one-page resume. No response in a week? One polite follow-up is normal.</li>
+        <ul className="mt-5 space-y-1.5 text-xs leading-relaxed text-fg-muted">
+          <li>· Find the professor&apos;s email on the lab site or the U of A directory — one professor at a time, never a mass email.</li>
+          <li>· Mention one specific paper or project; it&apos;s the difference between deleted and answered.</li>
+          <li>· Attach a one-page resume. No reply in a week? One polite follow-up is normal.</li>
+          <li>· Nothing you type here leaves your device.</li>
         </ul>
       </div>
-    </div>
+    </dialog>
   );
 }
 
@@ -192,43 +185,35 @@ export function LabCard({ lab }: { lab: Lab }) {
   const [open, setOpen] = useState(false);
   const updatedRecently = isRecent(lab.activity?.lastPostAt, REF);
   return (
-    <article className="lift flex flex-col border border-line bg-paper p-5">
+    <article className={`flex h-full flex-col p-5 ${ui.card} ${ui.cardHover}`}>
       <div className="flex items-start justify-between gap-3">
-        <p className="font-mono text-[10px] uppercase tracking-wider text-ink-faint">{lab.department}</p>
+        <p className="text-xs font-medium text-fg-subtle">{lab.department}</p>
         {lab.activity?.hiringSignal ? (
-          <span className="inline-flex shrink-0 items-center gap-1 rounded-full bg-moss-wash px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-moss">
-            <Signal className="size-3" /> Recruiting signal
-          </span>
+          <Badge tone="ok" className="shrink-0">
+            <Signal className="size-3" /> Recruiting
+          </Badge>
         ) : null}
       </div>
-      <h3 className="font-display mt-2 text-lg font-bold leading-snug tracking-tight">{lab.name}</h3>
-      {lab.pi ? <p className="mt-0.5 text-sm text-ink-soft">PI: {lab.pi}</p> : null}
-      <p className="mt-2 flex flex-wrap gap-x-2.5 gap-y-1 text-xs text-ink-soft">
+      <h3 className="mt-2 text-base font-semibold leading-snug tracking-[-0.01em]">{lab.name}</h3>
+      {lab.pi ? <p className="mt-0.5 text-sm text-fg-muted">{lab.pi}</p> : null}
+      <p className="mt-3 flex flex-wrap gap-1.5">
         {lab.areas.map((a) => (
-          <span key={a} className="border border-line px-1.5 py-0.5">
+          <span key={a} className={ui.chip}>
             {a}
           </span>
         ))}
       </p>
-      {lab.contactHint ? <p className="mt-3 text-xs italic leading-relaxed text-ink-soft">{lab.contactHint}</p> : null}
-      <div className="mt-3 font-mono text-[10px] uppercase tracking-wider text-ink-faint">
+      {lab.contactHint ? <p className="mt-3 text-sm leading-relaxed text-fg-muted">{lab.contactHint}</p> : null}
+      <p className="mt-auto pt-4 text-xs text-fg-subtle">
         {updatedRecently && lab.activity?.lastPostAt
-          ? `Site updated ${new Date(lab.activity.lastPostAt).getFullYear()}`
+          ? `Site active · last post ${new Date(lab.activity.lastPostAt).getFullYear()}`
           : "Site verified reachable"}
-      </div>
-      <div className="mt-4 flex gap-2 border-t border-line pt-4">
-        <a
-          href={lab.url}
-          target="_blank"
-          rel="noreferrer"
-          className="inline-flex flex-1 items-center justify-center gap-1.5 border border-ink px-3 py-2 font-mono text-[11px] uppercase tracking-wider transition-colors hover:bg-ink hover:text-paper"
-        >
+      </p>
+      <div className="mt-3 grid grid-cols-2 gap-2 border-t border-line pt-4">
+        <a href={lab.url} target="_blank" rel="noreferrer" className={`${ui.btnSecondary} px-3 py-2 text-xs`}>
           Visit site <ArrowUpRight className="size-3.5" />
         </a>
-        <button
-          onClick={() => setOpen(true)}
-          className="inline-flex flex-1 items-center justify-center gap-1.5 bg-cardinal px-3 py-2 font-mono text-[11px] uppercase tracking-wider text-paper transition-colors hover:bg-cardinal-deep"
-        >
+        <button type="button" onClick={() => setOpen(true)} className={`${ui.btnPrimary} px-3 py-2 text-xs`}>
           <Mail className="size-3.5" /> Draft intro
         </button>
       </div>

@@ -33,11 +33,20 @@ export function jobsTaggedFor(slug: string): Job[] {
 /** Jobs open to any major (no specific tags). */
 export const ANY_MAJOR_JOBS = VISIBLE_JOBS.filter((j) => j.majors.length === 0);
 
-export function labsForMajor(slug: string): Lab[] {
-  return LABS.filter((l) => l.majors.includes(slug) && l.activity?.alive !== false);
-}
+/**
+ * Labs shown on the site. A lab is hidden only after 3 consecutive failed
+ * checks, so one bad day on a professor's server never removes it.
+ * (Older data without a failStreak falls back to the alive flag.)
+ */
+export const LIVE_LABS = LABS.filter((l) => {
+  const a = l.activity;
+  if (!a) return true;
+  return (a.failStreak ?? (a.alive ? 0 : 3)) < 3;
+});
 
-export const LIVE_LABS = LABS.filter((l) => l.activity?.alive !== false);
+export function labsForMajor(slug: string): Lab[] {
+  return LIVE_LABS.filter((l) => l.majors.includes(slug));
+}
 
 export const HIRING_SIGNAL_LABS = LIVE_LABS.filter((l) => l.activity?.hiringSignal);
 

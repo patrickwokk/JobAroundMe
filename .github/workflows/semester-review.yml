@@ -1,0 +1,35 @@
+name: Semester review reminder
+
+# Hand-curated data rots quietly. Twice a year — just before each semester's
+# job rush — this opens a short checklist issue so it gets a human look.
+on:
+  schedule:
+    - cron: "0 15 10 1,8 *" # Jan 10 and Aug 10
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  remind:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Open the checklist issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          open=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open --search "Semester review in:title" --json number --jq 'length')
+          if [ "$open" != "0" ]; then
+            echo "A review issue is already open."
+            exit 0
+          fi
+          gh issue create --repo "$GITHUB_REPOSITORY" --title "Semester review — $(date -u +'%B %Y')" --body-file - <<'EOF'
+          A 20-minute pass keeps Jam trustworthy. Tick these off, then close the issue. Full runbook: MAINTAINING.md.
+
+          - [ ] **Programs** — skim `data/curated/programs.json`. Anything ended, renamed or moved? The latest *Refresh listings* run summary (Actions tab) lists dead links.
+          - [ ] **Labs** — the *How it works* page shows any lab failing its checks. Remove labs that are gone for good; add new ones you've heard about.
+          - [ ] **Clubs** — spot-check a few in `data/curated/clubs.json` against HogSync.
+          - [ ] **Career tracks** — do the timelines in `lib/tracks.ts` still match this year's recruiting calendar?
+          - [ ] **Reports** — move any open "filled" reports into `data/overrides.json`.
+          - [ ] **Overrides** — delete entries older than a semester; those listings are long gone.
+          EOF

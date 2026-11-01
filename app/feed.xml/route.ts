@@ -1,5 +1,5 @@
 import { META, VISIBLE_JOBS } from "@/lib/data";
-import { REPO_URL } from "@/lib/site";
+import { SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
 
@@ -12,7 +12,7 @@ function esc(s: string): string {
 }
 
 export function GET() {
-  const site = "https://patrickwokk.github.io/JobAroundMe";
+  const site = SITE_URL;
   const items = VISIBLE_JOBS.slice(0, 25)
     .map((j) => {
       const date = new Date(j.postedAt ?? j.firstSeenAt).toUTCString();
@@ -29,11 +29,10 @@ export function GET() {
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0">
   <channel>
-    <title>JobAroundMe — U of A student listings</title>
-    <link>${site}</link>
-    <description>Meaningful student work at the University of Arkansas — new campus jobs, research openings and NWA internships.</description>
+    <title>Jam — Job Around Me</title>
+    <link>${site}/</link>
+    <description>New campus jobs, research openings and Northwest Arkansas internships for University of Arkansas students.</description>
     <lastBuildDate>${new Date(META.lastRefreshed).toUTCString()}</lastBuildDate>
-    <docs>${REPO_URL}</docs>
 ${items}
   </channel>
 </rss>

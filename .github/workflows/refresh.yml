@@ -2,8 +2,8 @@ name: Refresh listings
 
 on:
   schedule:
-    # Daily at ~6am Central. The sweep flags postings unseen for 4+ days
-    # and expires them after 14 — so a daily run keeps the board honest.
+    # Daily at ~6am Central. The sweep flags postings unseen for 4+ days and
+    # expires them after 14 — so a daily run keeps the board honest.
     - cron: "0 11 * * *"
   workflow_dispatch:
 
@@ -11,39 +11,74 @@ permissions:
   contents: write
   actions: write
 
+concurrency:
+  group: refresh
+  cancel-in-progress: false
+
 jobs:
   refresh:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: "1.3.10"
 
       - run: bun install --frozen-lockfile
 
-      - name: Scrape sources and sweep lifecycle
+      - name: Scrape sources, sweep lifecycle, check health
         run: bun run refresh
 
       - name: Commit updated data
         id: commit
         run: |
-          git config user.name "jobaroundme-refresh"
+          git config user.name "jam-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add data/
           if git diff --cached --quiet; then
-            echo "No listing changes today."
+            echo "No data changes."
             echo "changed=false" >> "$GITHUB_OUTPUT"
-          else
-            git commit -m "data: refresh listings ($(date -u +%Y-%m-%d))"
-            git push
-            echo "changed=true" >> "$GITHUB_OUTPUT"
+            exit 0
           fi
+          git commit -q -m "data: refresh listings ($(date -u +%Y-%m-%d))"
+          # GitHub occasionally 500s on push, and a maintainer may push mid-run: rebase and retry.
+          for attempt in 1 2 3 4; do
+            if git push -q; then
+              echo "changed=true" >> "$GITHUB_OUTPUT"
+              exit 0
+            fi
+            echo "Push attempt $attempt failed; retrying…"
+            sleep $((attempt * 15))
+            git pull -q --rebase || true
+          done
+          echo "::error::Could not push refreshed data after 4 attempts."
+          exit 1
 
-      # GITHUB_TOKEN pushes don't trigger push-workflows, so kick the deploy explicitly.
+      # GITHUB_TOKEN pushes don't trigger push workflows, so start the deploy explicitly.
       - name: Trigger site deploy
         if: steps.commit.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh workflow run deploy.yml --ref main --repo "$GITHUB_REPOSITORY"
+
+      # Belt and braces: GitHub pauses cron workflows after 60 days without repo activity.
+      - name: Keep the schedule alive
+        if: always()
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api -X PUT "repos/$GITHUB_REPOSITORY/actions/workflows/refresh.yml/enable" || true
+
+      # Data is already committed and deployed; this only fails the run (so GitHub
+      # emails the owner) when a source needs a human. See MAINTAINING.md.
+      - name: Report source health
+        run: |
+          bun -e '
+            const m = require("./data/meta.json");
+            if (m.issues?.length) {
+              for (const issue of m.issues) console.log(`::error::${issue}`);
+              process.exit(1);
+            }
+            console.log("All sources healthy.");
+          '

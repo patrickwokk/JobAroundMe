@@ -1,4 +1,4 @@
-import { readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, writeFileSync } from "node:fs";
 import path from "node:path";
 import type { Lab, LabActivity } from "../../lib/types";
 
@@ -10,7 +10,10 @@ import type { Lab, LabActivity } from "../../lib/types";
  *  - "hiring signals": pages that mention joining / openings / recruiting
  */
 
-const UA = "JobAroundMe/1.0 (student research-lab directory; github.com/JobAroundMe)";
+const UA = "Jam/1.0 (Job Around Me student research-lab directory)";
+
+/** A lab is hidden from the site only after this many consecutive failed checks. */
+export const LAB_HIDE_AFTER_FAILURES = 3;
 const HIRING = /join (?:the |our )?(?:lab|team|group)|we are (?:recruiting|hiring)|open(?:ings| positions?)|positions? available|looking for (?:motivated )?(?:undergraduate|graduate|phd)? ?students|prospective students/i;
 
 type CuratedLab = Omit<Lab, "activity">;
@@ -47,7 +50,7 @@ async function latestWpPost(siteUrl: string): Promise<Pick<LabActivity, "wordpre
   }
 }
 
-async function probeLab(lab: CuratedLab): Promise<Lab> {
+async function probeLab(lab: CuratedLab, prev?: LabActivity): Promise<Lab> {
   const activity: LabActivity = { checkedAt: new Date().toISOString(), alive: false };
   try {
     const res = await fetchWithTimeout(lab.url);
@@ -61,7 +64,26 @@ async function probeLab(lab: CuratedLab): Promise<Lab> {
   } catch {
     activity.alive = false;
   }
+  activity.failStreak = activity.alive ? 0 : (prev?.failStreak ?? 0) + 1;
+  if (!activity.alive && prev) {
+    // A blip shouldn't erase what we knew — keep the last good observations.
+    activity.wordpress ??= prev.wordpress;
+    activity.lastPostAt ??= prev.lastPostAt;
+    activity.lastPostTitle ??= prev.lastPostTitle;
+    activity.hiringSignal ??= prev.hiringSignal;
+  }
   return { ...lab, activity };
+}
+
+function previousActivity(): Map<string, LabActivity> {
+  const file = path.join(process.cwd(), "data", "labs.json");
+  if (!existsSync(file)) return new Map();
+  try {
+    const labs = JSON.parse(readFileSync(file, "utf8")) as Lab[];
+    return new Map(labs.filter((l) => l.activity).map((l) => [l.id, l.activity as LabActivity]));
+  } catch {
+    return new Map();
+  }
 }
 
 async function mapLimit<T, R>(items: T[], limit: number, fn: (item: T) => Promise<R>): Promise<R[]> {
@@ -82,11 +104,13 @@ export async function probeLabs(): Promise<Lab[]> {
   const curatedPath = path.join(process.cwd(), "data", "curated", "labs.json");
   const curated = JSON.parse(readFileSync(curatedPath, "utf8")) as CuratedLab[];
   console.log(`  labs: probing ${curated.length} lab sites…`);
-  const labs = await mapLimit(curated, 5, probeLab);
+  const prev = previousActivity();
+  const labs = await mapLimit(curated, 5, (lab) => probeLab(lab, prev.get(lab.id)));
 
   const dead = labs.filter((l) => !l.activity?.alive);
   if (dead.length > 0) {
-    console.warn(`  labs: ${dead.length} sites unreachable → ${dead.map((l) => l.id).join(", ")}`);
+    const detail = dead.map((l) => `${l.id} (${l.activity?.failStreak}x)`).join(", ");
+    console.warn(`  labs: ${dead.length} sites unreachable → ${detail}`);
   }
   const wp = labs.filter((l) => l.activity?.wordpress).length;
   const hiring = labs.filter((l) => l.activity?.hiringSignal).length;

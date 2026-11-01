@@ -1,42 +1,64 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, IBM_Plex_Mono, Schibsted_Grotesk } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { Analytics } from "@/components/analytics";
+import { FreshnessBanner } from "@/components/freshness-banner";
+import { SITE_URL } from "@/lib/site";
+import { THEME_INIT_SCRIPT } from "@/lib/theme-script";
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  subsets: ["latin"],
-  style: ["normal", "italic"],
-  axes: ["opsz"],
-});
-
-const schibsted = Schibsted_Grotesk({
+const sans = Schibsted_Grotesk({
   variable: "--font-schibsted",
   subsets: ["latin"],
 });
 
-const plexMono = IBM_Plex_Mono({
-  variable: "--font-plex-mono",
+// Serif italic is reserved for a single accent word per page — loaded italic-only.
+const serif = Fraunces({
+  variable: "--font-fraunces",
   subsets: ["latin"],
-  weight: ["400", "500", "600"],
+  style: ["italic"],
+  axes: ["opsz"],
 });
 
+const mono = IBM_Plex_Mono({
+  variable: "--font-plex-mono",
+  subsets: ["latin"],
+  weight: ["400", "500"],
+});
+
+const DESCRIPTION =
+  "Campus jobs, professor-led research labs, clubs and Northwest Arkansas internships that build a real resume — verified daily and sorted by major, for University of Arkansas students.";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://patrickwokk.github.io/JobAroundMe"),
+  // Trailing slash so relative asset URLs resolve under the GitHub Pages base path.
+  metadataBase: new URL(`${SITE_URL}/`),
   title: {
-    default: "JobAroundMe — meaningful student work at the University of Arkansas",
-    template: "%s · JobAroundMe",
+    default: "Jam — Job Around Me · Student work at the University of Arkansas",
+    template: "%s · Jam",
   },
-  description:
-    "Campus jobs, professor-led research labs, clubs, and NWA internships that actually build a resume — curated for University of Arkansas, Fayetteville students and sorted by major and career track.",
+  description: DESCRIPTION,
+  applicationName: "Jam",
   openGraph: {
-    title: "JobAroundMe",
-    description:
-      "Work that counts: campus jobs, research labs, clubs and NWA internships for U of A students — verified on a schedule, sorted by major and career track.",
+    title: "Jam — Job Around Me",
+    description: DESCRIPTION,
+    siteName: "Jam",
     type: "website",
+    images: [{ url: "og.png", width: 1200, height: 630, alt: "Jam — Job Around Me" }],
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Jam — Job Around Me",
+    description: DESCRIPTION,
+    images: ["og.png"],
+  },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+  ],
 };
 
 export default function RootLayout({
@@ -45,17 +67,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-scroll-behavior="smooth">
-      <body className={`${fraunces.variable} ${schibsted.variable} ${plexMono.variable} antialiased`}>
+    <html lang="en" data-scroll-behavior="smooth" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: THEME_INIT_SCRIPT }} />
+      </head>
+      <body className={`${sans.variable} ${serif.variable} ${mono.variable} antialiased`}>
         <noscript>
           <style>{`.reveal{opacity:1 !important;transform:none !important}`}</style>
         </noscript>
         <a
           href="#main"
-          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:bg-cardinal focus:px-4 focus:py-2 focus:text-paper"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-lg focus:bg-brand focus:px-4 focus:py-2 focus:text-white"
         >
           Skip to content
         </a>
+        <FreshnessBanner />
         <Header />
         <main id="main">{children}</main>
         <Footer />

@@ -1,166 +1,130 @@
 import type { Metadata } from "next";
 import { SectionHeading } from "@/components/section-heading";
-import { ArrowUpRight, Check, Mail, Signal } from "@/components/icons";
-import { DISCORD_INVITE_URL, DISCUSSIONS_URL, REPO_URL } from "@/lib/site";
+import { PageHeader } from "@/components/page-header";
+import { Rings } from "@/components/rings";
+import { ArrowUpRight, Check } from "@/components/icons";
+import { CONTACT_EMAIL, DISCORD_INVITE_URL } from "@/lib/site";
+import { ui } from "@/lib/ui";
 
 export const metadata: Metadata = {
-  title: "Connect & Referrals",
+  title: "Referral Board",
   description:
-    "The Razorback Referral Board — a dedicated home where U of A students, interns and alumni trade intros, referrals and straight answers.",
+    "The Jam Referral Board — a dedicated place where U of A students, interns and alumni trade intros, referrals and straight answers.",
 };
 
 const RITUALS = [
   {
     title: "Give first",
-    copy: "Interning somewhere? Post an intro: where you work, what you'd tell a sophomore, whether you can refer. Ten minutes of your senior year changes someone's junior year.",
+    copy: "Interning somewhere? Post an intro: where you work, what you'd tell a sophomore, whether you can refer. Ten minutes of your senior year can change someone's junior year.",
   },
   {
     title: "Ask specifically",
-    copy: "\"Can anyone refer me to J.B. Hunt's tech internship? Here's my resume and why I fit\" gets answers. \"Anyone hiring?\" doesn't. Specific asks are answerable asks.",
+    copy: "“Could anyone refer me to J.B. Hunt's tech internship? Here's my resume and why I fit” gets answers. “Anyone hiring?” doesn't.",
   },
   {
     title: "Close the loop",
-    copy: "Got the interview? The offer? Post the win and pay the referral forward next cycle. The board runs on visible reciprocity.",
+    copy: "Landed the interview? The offer? Post the win and pay the referral forward next cycle. The board runs on visible reciprocity.",
   },
 ];
 
 const CHANNELS = [
-  { name: "#intros", desc: "who you are, where you've worked, what you can help with" },
-  { name: "#referral-asks", desc: "specific requests: company + role + why you fit" },
-  { name: "#referral-offers", desc: "insiders posting capacity: “2 referrals this cycle”" },
-  { name: "#wins", desc: "interviews landed, offers signed, loops closed" },
-  { name: "#this-week", desc: "the freshest listings from the board, auto-posted" },
+  { name: "#intros", desc: "Who you are, where you've worked, what you can help with" },
+  { name: "#referral-asks", desc: "Specific requests: company + role + why you fit" },
+  { name: "#referral-offers", desc: "Insiders posting capacity — “2 referrals this cycle”" },
+  { name: "#wins", desc: "Interviews landed, offers signed, loops closed" },
+  { name: "#this-week", desc: "The freshest listings from Jam" },
 ];
 
 export default function ConnectPage() {
-  const boardOpen = DISCORD_INVITE_URL.length > 0;
+  const open = DISCORD_INVITE_URL.length > 0;
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-      <p className="kicker">Connect · The Referral Board</p>
-      <h1 className="font-display mt-2 max-w-3xl text-4xl font-black leading-[1.05] tracking-tight sm:text-5xl">
-        Referrals beat resumes<span className="text-cardinal">.</span>
-      </h1>
-      <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
-        Most NWA internships are won the way jobs everywhere are won: someone inside said a name.
-        The Referral Board is a dedicated home — its own place, not a feed bolted onto someone
-        else&apos;s platform — where U of A students, interns and alumni trade intros, referrals
-        and straight answers. Free, forever.
-      </p>
+    <>
+      <PageHeader
+        kicker="Referral Board"
+        title="Referrals beat resumes"
+        lede="Most internships are won the way jobs everywhere are won: someone inside said a name. The Jam Referral Board is a dedicated place where U of A students, interns and alumni trade intros, referrals and straight answers. Free, always."
+      />
 
-      {/* ————— The dedicated home ————— */}
-      <div className="mt-10 grid gap-px overflow-hidden border-2 border-ink bg-line lg:grid-cols-[1.2fr_1fr]">
-        <div className="bg-ink p-7 text-paper sm:p-9">
-          <p className="flex items-center gap-2 font-mono text-[11px] uppercase tracking-wider text-paper/70">
-            <Signal className="size-4 text-cardinal" /> The board lives on Discord
-          </p>
-          <h2 className="font-display mt-3 text-3xl font-black tracking-tight">
-            {boardOpen ? "The board is open." : "Opening soon."}
-          </h2>
-          <p className="mt-3 max-w-md text-sm leading-relaxed text-paper/70">
-            Discord is where students already are: real-time, works on every phone, no resume-farm
-            vibes, and your handle doesn&apos;t have to be your transcript. One server, five
-            channels, zero noise.
-          </p>
-          {boardOpen ? (
-            <a
-              href={DISCORD_INVITE_URL}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex items-center gap-2 bg-cardinal px-5 py-3 font-mono text-xs uppercase tracking-wider text-paper transition-colors hover:bg-cardinal-deep"
-            >
-              Join the Referral Board <ArrowUpRight className="size-4" />
-            </a>
-          ) : (
-            <p className="mt-6 inline-flex items-center gap-2 border border-paper/30 px-5 py-3 font-mono text-xs uppercase tracking-wider text-paper/80">
-              Invite link drops here — check back this week
-            </p>
-          )}
-          <p className="mt-4 text-xs text-paper/50">
-            Until then, the{" "}
-            <a href={DISCUSSIONS_URL} target="_blank" rel="noreferrer" className="underline underline-offset-2 hover:text-paper">
-              public archive
-            </a>{" "}
-            takes asks today.
-          </p>
-        </div>
-        <div className="bg-paper p-7 sm:p-9">
-          <p className="kicker">The channel map</p>
-          <ul className="mt-4 space-y-3">
-            {CHANNELS.map((c) => (
-              <li key={c.name} className="flex gap-3 text-sm">
-                <span className="shrink-0 font-mono text-[12px] font-medium text-cardinal">{c.name}</span>
-                <span className="leading-relaxed text-ink-soft">{c.desc}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </div>
-
-      <section className="mt-14">
-        <SectionHeading kicker="House rules" title="Three rituals keep it useful" />
-        <div className="grid gap-4 lg:grid-cols-3">
-          {RITUALS.map((r, i) => (
-            <div key={r.title} className="border border-line bg-paper p-6">
-              <p className="font-display text-3xl font-black text-cardinal">{String(i + 1).padStart(2, "0")}</p>
-              <h3 className="font-display mt-2 text-xl font-bold">{r.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{r.copy}</p>
+      <div className={`${ui.container} py-12`}>
+        <div className="grid gap-4 lg:grid-cols-[1.25fr_1fr]">
+          <div className="relative overflow-hidden rounded-2xl bg-night p-7 text-night-fg sm:p-9">
+            <Rings className="pointer-events-none absolute -right-48 -top-48 size-[30rem] text-night-line [mask-image:radial-gradient(circle,black_30%,transparent_70%)]" />
+            <div className="relative">
+              <p className="inline-flex items-center gap-2 text-xs font-semibold text-night-muted">
+                <span className={`size-1.5 rounded-full ${open ? "pulse-dot bg-ok" : "bg-warn"}`} aria-hidden />
+                {open ? "Open now" : "Opening soon"}
+              </p>
+              <h2 className="mt-3 text-3xl font-bold tracking-tight">
+                {open ? "Join the Referral Board" : "The board opens soon"}
+              </h2>
+              <p className="mt-3 max-w-md text-sm leading-relaxed text-night-muted">
+                It lives on Discord — where students already are. Real-time, works on any phone, and your handle doesn&apos;t
+                have to be your transcript. One server, five channels, zero noise.
+              </p>
+              {open ? (
+                <a href={DISCORD_INVITE_URL} target="_blank" rel="noreferrer" className={`${ui.btnPrimary} mt-7 h-11 px-5`}>
+                  Join on Discord <ArrowUpRight className="size-4" />
+                </a>
+              ) : CONTACT_EMAIL ? (
+                <a
+                  href={`mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent("Referral Board — count me in")}`}
+                  className={`${ui.btnNight} mt-7 h-11 px-5`}
+                >
+                  Get notified when it opens
+                </a>
+              ) : (
+                <p className="mt-7 inline-flex rounded-lg border border-night-line px-4 py-2.5 text-sm text-night-muted">
+                  The invite link will appear right here.
+                </p>
+              )}
             </div>
-          ))}
-        </div>
-      </section>
+          </div>
 
-      <section className="mt-14 grid gap-8 lg:grid-cols-2">
-        <div className="border border-line bg-paper p-7">
-          <p className="kicker">Why not just LinkedIn / a group chat?</p>
-          <ul className="mt-4 space-y-3 text-sm leading-relaxed text-ink-soft">
+          <div className={`p-7 sm:p-9 ${ui.card}`}>
+            <p className={ui.kicker}>Inside the board</p>
+            <ul className="mt-4 space-y-3.5">
+              {CHANNELS.map((c) => (
+                <li key={c.name} className="text-sm">
+                  <span className="font-mono text-[13px] font-medium text-accent">{c.name}</span>
+                  <p className="mt-0.5 leading-relaxed text-fg-muted">{c.desc}</p>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <section className="mt-16">
+          <SectionHeading kicker="House rules" title="Three habits keep it useful" />
+          <div className="grid gap-4 lg:grid-cols-3">
+            {RITUALS.map((r, i) => (
+              <div key={r.title} className={`p-6 ${ui.card}`}>
+                <span className="inline-flex size-8 items-center justify-center rounded-full bg-brand-wash text-sm font-semibold text-accent">
+                  {i + 1}
+                </span>
+                <h3 className="mt-4 text-lg font-semibold tracking-tight">{r.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-fg-muted">{r.copy}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section className={`mt-16 p-7 sm:p-9 ${ui.card}`}>
+          <p className={ui.kicker}>Why a dedicated board</p>
+          <ul className="mt-4 grid gap-3 text-sm leading-relaxed text-fg-muted sm:grid-cols-2">
             {[
-              "A dedicated place with one purpose — referrals — instead of an algorithmic feed with ads.",
-              "Identity-light: you're a Razorback with a handle, not a headshot with a follower count.",
+              "One purpose — referrals — instead of an algorithmic feed full of ads.",
+              "A handle, not a headshot: ask questions without performing for recruiters.",
               "Public asks create accountability; hand-offs move to DMs when they get real.",
-              "The archive channel keeps answers searchable, so next year's students inherit this year's intel.",
+              "Moderated for students: recruiters posing as students are removed, permanently.",
             ].map((line) => (
               <li key={line} className="flex gap-2.5">
-                <Check className="mt-0.5 size-4 shrink-0 text-moss" />
+                <Check className="mt-0.5 size-4 shrink-0 text-ok" />
                 {line}
               </li>
             ))}
           </ul>
-        </div>
-        <div className="border-2 border-ink bg-paper-2 p-7">
-          <p className="kicker">Where this goes · v2</p>
-          <p className="mt-4 text-sm leading-relaxed text-ink-soft">
-            When the board outgrows a server, the{" "}
-            <a href={`${REPO_URL}/blob/main/docs/CONNECT.md`} target="_blank" rel="noreferrer" className="font-medium text-cardinal underline-offset-2 hover:underline">
-              v2 blueprint
-            </a>{" "}
-            describes a purpose-built network — still $0 at student scale:
-          </p>
-          <ul className="mt-4 space-y-3 text-sm leading-relaxed text-ink-soft">
-            <li className="flex gap-2.5">
-              <Mail className="mt-0.5 size-4 shrink-0 text-cardinal" />
-              <span>
-                <strong className="text-ink">@uark.edu-verified profiles</strong> — magic-link
-                sign-in restricted to campus emails, so every member is provably Razorback.
-              </span>
-            </li>
-            <li className="flex gap-2.5">
-              <Mail className="mt-0.5 size-4 shrink-0 text-cardinal" />
-              <span>
-                <strong className="text-ink">An opt-in insider directory</strong> — filter by
-                company and major: &ldquo;who&apos;s at Walmart Tech from EECS?&rdquo;
-              </span>
-            </li>
-            <li className="flex gap-2.5">
-              <Mail className="mt-0.5 size-4 shrink-0 text-cardinal" />
-              <span>
-                <strong className="text-ink">Karma that means something</strong> — completed
-                referrals counted publicly. Blind&apos;s candor, minus the anonymity that breeds
-                its toxicity.
-              </span>
-            </li>
-          </ul>
-        </div>
-      </section>
-    </div>
+        </section>
+      </div>
+    </>
   );
 }

@@ -1,4 +1,8 @@
-# Monetization — if/when traffic arrives
+# Monetization — parked
+
+> **Status: not pursuing at launch.** Jam launches as a free, independent resource with no
+> sponsorships, no ads and no employer products. This document only records the principles
+> to hold *if* sustainability funding is ever reconsidered — it is not a plan.
 
 **In one line: companies pay; students never do.**
 
@@ -11,8 +15,6 @@ doesn't flow at all. Three principles, because they're the moat:
    people). Employers buy *placement in front of students*, never information *about* them.
 3. **Money can't buy the meaning filter.** A featured slot is still held to the same bar —
    would this line strengthen a student resume? Payment buys position, not exemption.
-
-The employer-facing pitch lives on the site at [/employers](../app/employers/page.tsx).
 
 ## Do nothing until the numbers say otherwise
 

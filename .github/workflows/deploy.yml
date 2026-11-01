@@ -17,22 +17,47 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 15
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - uses: oven-sh/setup-bun@v2
         with:
-          bun-version: latest
+          bun-version: "1.3.10"
 
       - run: bun install --frozen-lockfile
+
+      # Pipeline logic + curated data validation. A failure keeps the last good site live.
+      - run: bun test
+
+      # Every URL is derived from where the repo lives, so moving it to an
+      # organization — or setting a CUSTOM_DOMAIN repo variable — needs no code changes.
+      - name: Derive site URLs
+        env:
+          CUSTOM_DOMAIN: ${{ vars.CUSTOM_DOMAIN }}
+        run: |
+          owner="${GITHUB_REPOSITORY_OWNER,,}"
+          repo="${GITHUB_REPOSITORY#*/}"
+          if [ -n "$CUSTOM_DOMAIN" ]; then
+            site="https://$CUSTOM_DOMAIN"; base=""
+          elif [ "${repo,,}" = "$owner.github.io" ]; then
+            site="https://$owner.github.io"; base=""
+          else
+            site="https://$owner.github.io/$repo"; base="/$repo"
+          fi
+          {
+            echo "NEXT_PUBLIC_SITE_URL=$site"
+            echo "NEXT_PUBLIC_BASE_PATH=$base"
+            echo "NEXT_PUBLIC_REPO_URL=$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
+          } >> "$GITHUB_ENV"
+          echo "Building for $site"
 
       - name: Build static site
         run: bun run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /JobAroundMe
           NEXT_PUBLIC_GOATCOUNTER: ${{ vars.GOATCOUNTER_CODE }}
 
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: out
 
@@ -44,4 +69,4 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

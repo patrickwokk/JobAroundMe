@@ -16,14 +16,14 @@ export function BookmarkButton({ jobId, title }: { jobId: string; title: string 
 
   return (
     <button
+      type="button"
       onClick={() => setSaved(toggleSaved(jobId))}
       aria-pressed={saved}
       aria-label={saved ? `Remove "${title}" from saved` : `Save "${title}"`}
-      title={saved ? "Saved — click to remove" : "Save for later"}
-      className={`relative z-10 inline-flex items-center gap-1.5 border px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-wider transition-colors ${
+      className={`relative z-10 inline-flex items-center gap-1.5 rounded-lg border px-2.5 py-1.5 text-xs font-medium transition-colors ${
         saved
-          ? "border-cardinal bg-cardinal text-paper"
-          : "border-line-strong text-ink-soft hover:border-cardinal hover:text-cardinal"
+          ? "border-transparent bg-brand-wash text-accent"
+          : "border-line-strong text-fg-muted hover:border-fg-subtle hover:text-fg"
       }`}
     >
       <Bookmark className="size-3.5" fill={saved ? "currentColor" : "none"} />

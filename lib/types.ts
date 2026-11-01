@@ -56,6 +56,8 @@ export interface LabActivity {
   lastPostTitle?: string;
   /** Page mentions joining/openings/recruiting students. */
   hiringSignal?: boolean;
+  /** Consecutive failed checks. A lab is hidden only at 3+, so one blip never removes it. */
+  failStreak?: number;
 }
 
 export interface Lab {
@@ -115,6 +117,15 @@ export interface Track {
   ladder: TrackStep[];
 }
 
+export interface SourceHealth {
+  ok: boolean;
+  /** Items the source produced this run (listings, reachable sites, live URLs). */
+  count: number;
+  total?: number;
+  /** Ids that failed their check (dead program URLs, unreachable labs). */
+  failing?: string[];
+}
+
 export interface SiteMeta {
   lastRefreshed: string;
   counts: {
@@ -125,6 +136,13 @@ export interface SiteMeta {
     onCampus: number;
     research: number;
   };
+  sources?: {
+    workday: SourceHealth;
+    programs: SourceHealth;
+    labs: SourceHealth;
+  };
+  /** Problems that need a human. Non-empty → the refresh workflow fails and GitHub emails the owner. */
+  issues?: string[];
 }
 
 export interface OverrideEntry {

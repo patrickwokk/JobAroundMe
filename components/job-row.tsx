@@ -2,11 +2,13 @@ import type { Job } from "@/lib/types";
 import { META } from "@/lib/data";
 import { relTime } from "@/lib/format";
 import { majorShortName } from "@/lib/majors";
-import { reportFilledUrl } from "@/lib/site";
-import { ArrowUpRight, MapPin } from "@/components/icons";
+import { reportFilledHref } from "@/lib/site";
+import { ui } from "@/lib/ui";
+import { ArrowUpRight } from "@/components/icons";
+import { Badge } from "@/components/badge";
 import { BookmarkButton } from "@/components/bookmark-button";
 
-const TYPE_LABEL: Record<Job["type"], string> = {
+export const TYPE_LABEL: Record<Job["type"], string> = {
   "part-time": "Part-time",
   "extra-help": "Extra help",
   "work-study": "Work-study",
@@ -18,89 +20,75 @@ const TYPE_LABEL: Record<Job["type"], string> = {
 const CATEGORY_LABEL: Record<Job["category"], string> = {
   "on-campus": "On campus",
   research: "Research",
-  nwa: "NWA",
+  nwa: "Northwest Arkansas",
 };
 
 const REF = Date.parse(META.lastRefreshed);
 
 function Freshness({ job }: { job: Job }) {
   if (job.status === "stale") {
-    return (
-      <span className="rounded-full bg-amber-wash px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-amber-note">
-        Recheck — not seen at source {relTime(job.lastSeenAt, REF)}
-      </span>
-    );
+    return <Badge tone="warn">Recheck · last seen {relTime(job.lastSeenAt, REF)}</Badge>;
   }
-  if (job.evergreen) {
-    return (
-      <span className="rounded-full bg-paper-3 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-ink-soft">
-        Standing opportunity
-      </span>
-    );
-  }
+  if (job.evergreen) return <Badge tone="outline">Standing program</Badge>;
   return (
-    <span className="rounded-full bg-moss-wash px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-moss">
+    <Badge tone="ok">
+      <span className="size-1.5 rounded-full bg-ok" aria-hidden />
       Verified {relTime(job.lastSeenAt, REF)}
-    </span>
+    </Badge>
   );
 }
 
 export function JobRow({ job }: { job: Job }) {
-  const isNew =
-    !job.evergreen && REF - Date.parse(job.postedAt ?? job.firstSeenAt) < 7 * 86_400_000;
+  const isNew = !job.evergreen && REF - Date.parse(job.postedAt ?? job.firstSeenAt) < 7 * 86_400_000;
+  const report = reportFilledHref(job.id, job.title);
+
   return (
-    <article className="group relative grid gap-x-8 gap-y-3 border-b border-line py-6 sm:grid-cols-[1fr_11rem]">
-      <div>
-        <div className="flex flex-wrap items-center gap-2">
-          {isNew ? (
-            <span className="bg-cardinal px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider text-paper">
-              New
-            </span>
-          ) : null}
-          <span className="rounded-full border border-ink/25 px-2 py-0.5 font-mono text-[10px] uppercase tracking-wider">
-            {TYPE_LABEL[job.type]}
-          </span>
-          <span className="font-mono text-[10px] uppercase tracking-wider text-ink-faint">
-            {CATEGORY_LABEL[job.category]}
-          </span>
+    <article className={`group relative grid gap-x-6 gap-y-4 p-5 sm:grid-cols-[1fr_auto] ${ui.card} ${ui.cardHover}`}>
+      <div className="min-w-0">
+        <div className="flex flex-wrap items-center gap-1.5">
+          {isNew ? <Badge tone="brand">New</Badge> : null}
+          <Badge>{TYPE_LABEL[job.type]}</Badge>
+          <Badge tone="outline">{CATEGORY_LABEL[job.category]}</Badge>
           <Freshness job={job} />
         </div>
-        <h3 className="font-display mt-2.5 text-xl font-bold leading-snug tracking-tight sm:text-[1.35rem]">
-          <a href={job.applyUrl} target="_blank" rel="noreferrer" className="after:absolute after:inset-0">
+
+        <h3 className="mt-3 text-[17px] font-semibold leading-snug tracking-[-0.01em]">
+          <a href={job.applyUrl} target="_blank" rel="noreferrer" className="after:absolute after:inset-0 after:rounded-xl">
             {job.title}
-            <ArrowUpRight className="ml-1.5 inline size-[0.95em] -translate-y-px text-cardinal opacity-0 transition-opacity group-hover:opacity-100" />
+            <ArrowUpRight className="ml-1 inline size-4 -translate-y-px text-fg-subtle transition-colors group-hover:text-accent" />
           </a>
         </h3>
-        <p className="mt-1 flex flex-wrap items-center gap-x-3 gap-y-1 text-sm text-ink-soft">
-          <span className="font-medium text-ink">{job.org}</span>
-          <span className="inline-flex items-center gap-1">
-            <MapPin className="size-3.5" />
-            {job.location}
-          </span>
+        <p className="mt-1 text-sm text-fg-muted">
+          <span className="font-medium text-fg">{job.org}</span>
+          <span className="mx-1.5 text-fg-subtle">·</span>
+          {job.location}
         </p>
-        <p className="mt-2 max-w-2xl text-sm leading-relaxed text-ink-soft">{job.blurb}</p>
-        {job.majors.length > 0 ? (
-          <p className="mt-2.5 flex flex-wrap gap-x-3 gap-y-1 font-mono text-[10px] uppercase tracking-wider text-cardinal">
-            {job.majors.map((m) => (
-              <span key={m}>{majorShortName(m)}</span>
-            ))}
-          </p>
-        ) : (
-          <p className="mt-2.5 font-mono text-[10px] uppercase tracking-wider text-ink-faint">Open to any major</p>
-        )}
+        <p className="mt-2 line-clamp-2 text-sm leading-relaxed text-fg-muted">{job.blurb}</p>
+        <p className="mt-3 text-xs text-fg-subtle">
+          {job.majors.length > 0 ? (
+            <>
+              Best for <span className="font-medium text-fg-muted">{job.majors.map(majorShortName).join(" · ")}</span>
+            </>
+          ) : (
+            "Open to any major"
+          )}
+        </p>
       </div>
-      <div className="flex items-start justify-between gap-2 sm:flex-col sm:items-end sm:text-right">
-        <p className="font-mono text-sm font-medium">{job.pay ?? ""}</p>
+
+      <div className="flex items-center justify-between gap-3 sm:flex-col sm:items-end sm:justify-start">
+        <p className="text-sm font-semibold tabular-nums">{job.pay ?? ""}</p>
         <div className="flex items-center gap-3 sm:mt-auto sm:flex-col sm:items-end sm:gap-2">
           <BookmarkButton jobId={job.id} title={job.title} />
-          <a
-            href={reportFilledUrl(job.id, job.title)}
-            target="_blank"
-            rel="noreferrer"
-            className="relative z-10 font-mono text-[10px] uppercase tracking-wider text-ink-faint underline-offset-2 hover:text-cardinal hover:underline"
-          >
-            Report filled
-          </a>
+          {report ? (
+            <a
+              href={report}
+              target="_blank"
+              rel="noreferrer"
+              className="relative z-10 text-xs text-fg-subtle underline-offset-2 transition-colors hover:text-accent hover:underline"
+            >
+              Report filled
+            </a>
+          ) : null}
         </div>
       </div>
     </article>

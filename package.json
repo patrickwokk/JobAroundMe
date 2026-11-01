@@ -7,7 +7,10 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "refresh": "bun run pipeline/refresh.ts"
+    "refresh": "bun run pipeline/refresh.ts",
+    "brand": "bun run scripts/brand-assets.ts",
+    "validate": "bun run pipeline/validate.ts",
+    "test": "bun test"
   },
   "dependencies": {
     "react": "19.1.0",

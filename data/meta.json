@@ -1,11 +1,30 @@
 {
-  "lastRefreshed": "2026-11-01T16:58:21.246Z",
+  "lastRefreshed": "2026-11-01T18:57:43.690Z",
   "counts": {
-    "jobs": 131,
-    "openJobs": 50,
+    "jobs": 93,
+    "openJobs": 42,
     "labs": 33,
     "nwa": 14,
-    "onCampus": 34,
+    "onCampus": 26,
     "research": 2
-  }
+  },
+  "sources": {
+    "workday": {
+      "ok": true,
+      "count": 11
+    },
+    "programs": {
+      "ok": true,
+      "count": 22,
+      "total": 22,
+      "failing": []
+    },
+    "labs": {
+      "ok": true,
+      "count": 32,
+      "total": 33,
+      "failing": []
+    }
+  },
+  "issues": []
 }

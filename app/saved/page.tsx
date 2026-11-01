@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { SavedList } from "@/components/saved-list";
+import { PageHeader } from "@/components/page-header";
+import { ui } from "@/lib/ui";
 
 export const metadata: Metadata = {
   title: "Saved",
@@ -8,18 +10,15 @@ export const metadata: Metadata = {
 
 export default function SavedPage() {
   return (
-    <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
-      <p className="kicker">Saved</p>
-      <h1 className="font-display mt-2 text-4xl font-black tracking-tight sm:text-5xl">
-        Your shortlist<span className="text-cardinal">.</span>
-      </h1>
-      <p className="mt-4 max-w-2xl text-base leading-relaxed text-ink-soft">
-        Saved on this device — no account, nothing sent anywhere. If a saved listing gets filled
-        or expires, it moves to the graveyard below instead of silently vanishing.
-      </p>
-      <div className="mt-8">
+    <>
+      <PageHeader
+        kicker="Saved"
+        title="Your shortlist"
+        lede="Saved on this device only — no account, nothing sent anywhere. If a saved listing is filled or expires, it moves to a list below instead of silently disappearing."
+      />
+      <div className={`${ui.container} py-10`}>
         <SavedList />
       </div>
-    </div>
+    </>
   );
 }
