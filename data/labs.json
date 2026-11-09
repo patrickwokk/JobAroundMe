@@ -15,7 +15,7 @@
     "url": "https://mscad.uark.edu/",
     "contactHint": "One of the largest research groups on campus — undergrads regularly join as hourly researchers.",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:28.872Z",
+      "checkedAt": "2026-11-09T21:12:29.050Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -39,13 +39,13 @@
     ],
     "url": "https://wordpressua.uark.edu/jdi/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:28.873Z",
-      "alive": true,
-      "hiringSignal": false,
+      "checkedAt": "2026-11-09T21:12:29.050Z",
+      "alive": false,
+      "failStreak": 1,
       "wordpress": true,
       "lastPostAt": "2020-07-14T09:52:38",
       "lastPostTitle": "Blog Post",
-      "failStreak": 0
+      "hiringSignal": false
     }
   },
   {
@@ -63,7 +63,7 @@
     ],
     "url": "https://wordpressua.uark.edu/wuj/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:28.873Z",
+      "checkedAt": "2026-11-09T21:12:29.050Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -84,7 +84,7 @@
     ],
     "url": "https://terahertz.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:28.873Z",
+      "checkedAt": "2026-11-09T21:12:29.050Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -109,7 +109,7 @@
     ],
     "url": "https://optoelectronics.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:28.873Z",
+      "checkedAt": "2026-11-09T21:12:29.050Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -133,7 +133,7 @@
     ],
     "url": "https://sail.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:29.706Z",
+      "checkedAt": "2026-11-09T21:12:29.961Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -157,7 +157,7 @@
     ],
     "url": "https://uark-cviu.github.io/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:29.900Z",
+      "checkedAt": "2026-11-09T21:12:30.954Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -178,9 +178,12 @@
     ],
     "url": "https://ascent.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:30.128Z",
+      "checkedAt": "2026-11-09T21:12:31.105Z",
       "alive": true,
       "hiringSignal": false,
+      "wordpress": true,
+      "lastPostAt": "2020-07-13T19:15:38",
+      "lastPostTitle": "Ricke Receives the National Chicken Council Broiler Research Award",
       "failStreak": 0
     }
   },
@@ -199,7 +202,7 @@
     ],
     "url": "https://ncrept.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:30.275Z",
+      "checkedAt": "2026-11-09T21:12:31.148Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -223,7 +226,7 @@
     ],
     "url": "https://grapes.uapower.group/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:30.447Z",
+      "checkedAt": "2026-11-09T21:12:31.271Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -249,7 +252,7 @@
     "url": "https://high-density-electronics.uark.edu/",
     "contactHint": "Cleanroom experience is rare on a resume — ask about student technician openings.",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:30.516Z",
+      "checkedAt": "2026-11-09T21:12:31.288Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -275,7 +278,7 @@
     "url": "https://hpc.uark.edu/",
     "contactHint": "Runs the campus supercomputers — student sysadmin experience here is gold for infra/DevOps careers.",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:31.028Z",
+      "checkedAt": "2026-11-09T21:12:32.081Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -300,7 +303,7 @@
     "url": "https://cast.uark.edu/",
     "contactHint": "Hires students across majors for GIS and scanning projects — great mix of tech and fieldwork.",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:31.450Z",
+      "checkedAt": "2026-11-09T21:12:32.096Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -322,7 +325,7 @@
     ],
     "url": "https://wordpressua.uark.edu/mzou/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:31.475Z",
+      "checkedAt": "2026-11-09T21:12:32.489Z",
       "alive": true,
       "hiringSignal": true,
       "wordpress": true,
@@ -346,12 +349,9 @@
     ],
     "url": "https://sydl.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:31.842Z",
+      "checkedAt": "2026-11-09T21:12:32.642Z",
       "alive": true,
       "hiringSignal": false,
-      "wordpress": true,
-      "lastPostAt": "2020-01-31T16:43:50",
-      "lastPostTitle": "Blog Post",
       "failStreak": 0
     }
   },
@@ -370,7 +370,7 @@
     "url": "https://industrial-engineering.uark.edu/Research/larry-and-gwen-stephens-undergraduate-research-laboratory.php",
     "contactHint": "A lab built specifically for undergraduates — contact the Industrial Engineering department office.",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:32.375Z",
+      "checkedAt": "2026-11-09T21:12:32.820Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -391,7 +391,7 @@
     ],
     "url": "https://mack-blackwell.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:32.380Z",
+      "checkedAt": "2026-11-09T21:12:33.374Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -413,7 +413,7 @@
     ],
     "url": "https://martrec.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:32.546Z",
+      "checkedAt": "2026-11-09T21:12:33.520Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -434,9 +434,9 @@
     ],
     "url": "https://kpquinn.hosted.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:32.655Z",
+      "checkedAt": "2026-11-09T21:12:33.719Z",
       "alive": false,
-      "failStreak": 8
+      "failStreak": 9
     }
   },
   {
@@ -454,7 +454,7 @@
     ],
     "url": "https://cblab.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:32.759Z",
+      "checkedAt": "2026-11-09T21:12:33.870Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -479,7 +479,7 @@
     ],
     "url": "https://nelsonlab.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:33.019Z",
+      "checkedAt": "2026-11-09T21:12:34.184Z",
       "alive": true,
       "hiringSignal": true,
       "wordpress": true,
@@ -504,7 +504,7 @@
     ],
     "url": "https://scbioengr.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:33.112Z",
+      "checkedAt": "2026-11-09T21:12:34.593Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -528,7 +528,7 @@
     ],
     "url": "https://samsonrajlab.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:33.130Z",
+      "checkedAt": "2026-11-09T21:12:35.212Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -552,7 +552,7 @@
     ],
     "url": "https://wordpressua.uark.edu/songlab/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:33.438Z",
+      "checkedAt": "2026-11-09T21:12:35.556Z",
       "alive": true,
       "hiringSignal": true,
       "wordpress": true,
@@ -575,7 +575,7 @@
     ],
     "url": "https://polynel.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:34.302Z",
+      "checkedAt": "2026-11-09T21:12:35.703Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -601,7 +601,7 @@
     ],
     "url": "https://monroemolsimgroup.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:34.346Z",
+      "checkedAt": "2026-11-09T21:12:36.100Z",
       "alive": true,
       "hiringSignal": true,
       "wordpress": true,
@@ -626,7 +626,7 @@
     ],
     "url": "https://nayanilab.weebly.com/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:34.392Z",
+      "checkedAt": "2026-11-09T21:12:36.404Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -647,7 +647,7 @@
     ],
     "url": "https://wordpressua.uark.edu/nakanishi-lab/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:34.566Z",
+      "checkedAt": "2026-11-09T21:12:36.526Z",
       "alive": true,
       "hiringSignal": true,
       "wordpress": true,
@@ -670,7 +670,7 @@
     ],
     "url": "https://wordpressua.uark.edu/drhoads/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:34.797Z",
+      "checkedAt": "2026-11-09T21:12:36.919Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -695,7 +695,7 @@
     "url": "https://wordpressua.uark.edu/mfeldne/",
     "contactHint": "Psych labs run on undergraduate research assistants — a semester of RA hours is the standard path to grad school.",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:35.188Z",
+      "checkedAt": "2026-11-09T21:12:37.114Z",
       "alive": true,
       "hiringSignal": true,
       "wordpress": true,
@@ -720,7 +720,7 @@
     ],
     "url": "https://spacecenter.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:35.279Z",
+      "checkedAt": "2026-11-09T21:12:38.956Z",
       "alive": true,
       "hiringSignal": false,
       "failStreak": 0
@@ -742,7 +742,7 @@
     ],
     "url": "https://aimrc.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:35.687Z",
+      "checkedAt": "2026-11-09T21:12:39.060Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
@@ -768,7 +768,7 @@
     ],
     "url": "https://nano.uark.edu/",
     "activity": {
-      "checkedAt": "2026-11-08T16:52:35.764Z",
+      "checkedAt": "2026-11-09T21:12:39.286Z",
       "alive": true,
       "hiringSignal": false,
       "wordpress": true,
