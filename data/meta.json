@@ -1,5 +1,5 @@
 {
-  "lastRefreshed": "2026-11-10T18:23:37.687Z",
+  "lastRefreshed": "2026-11-11T18:13:58.964Z",
   "counts": {
     "jobs": 95,
     "openJobs": 38,
@@ -21,7 +21,7 @@
     },
     "labs": {
       "ok": false,
-      "count": 32,
+      "count": 31,
       "total": 33,
       "failing": [
         "quinn"
