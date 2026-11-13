@@ -1,17 +1,17 @@
 {
-  "lastRefreshed": "2026-11-12T18:39:49.374Z",
+  "lastRefreshed": "2026-11-13T18:18:35.495Z",
   "counts": {
     "jobs": 95,
-    "openJobs": 37,
+    "openJobs": 36,
     "labs": 33,
     "nwa": 14,
-    "onCampus": 21,
+    "onCampus": 20,
     "research": 2
   },
   "sources": {
     "workday": {
       "ok": true,
-      "count": 11
+      "count": 10
     },
     "programs": {
       "ok": true,
@@ -21,7 +21,7 @@
     },
     "labs": {
       "ok": false,
-      "count": 32,
+      "count": 31,
       "total": 33,
       "failing": [
         "quinn"
