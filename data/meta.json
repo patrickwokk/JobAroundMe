@@ -1,5 +1,5 @@
 {
-  "lastRefreshed": "2026-11-14T16:47:51.409Z",
+  "lastRefreshed": "2026-11-15T17:30:55.038Z",
   "counts": {
     "jobs": 95,
     "openJobs": 36,
@@ -10,8 +10,8 @@
   },
   "sources": {
     "workday": {
-      "ok": false,
-      "count": 0
+      "ok": true,
+      "count": 10
     },
     "programs": {
       "ok": true,
@@ -21,14 +21,12 @@
     },
     "labs": {
       "ok": false,
-      "count": 31,
+      "count": 32,
       "total": 33,
       "failing": [
         "quinn"
       ]
     }
   },
-  "issues": [
-    "Workday scrape failed (previous data kept): SyntaxError: Failed to parse JSON"
-  ]
+  "issues": []
 }
