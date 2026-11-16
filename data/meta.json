@@ -1,5 +1,5 @@
 {
-  "lastRefreshed": "2026-11-15T17:30:55.038Z",
+  "lastRefreshed": "2026-11-16T20:45:43.532Z",
   "counts": {
     "jobs": 95,
     "openJobs": 36,
@@ -11,13 +11,15 @@
   "sources": {
     "workday": {
       "ok": true,
-      "count": 10
+      "count": 9
     },
     "programs": {
-      "ok": true,
-      "count": 22,
+      "ok": false,
+      "count": 21,
       "total": 22,
-      "failing": []
+      "failing": [
+        "curated:crystal-bridges"
+      ]
     },
     "labs": {
       "ok": false,
