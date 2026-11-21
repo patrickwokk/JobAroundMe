@@ -1,5 +1,5 @@
 {
-  "lastRefreshed": "2026-11-20T18:56:09.566Z",
+  "lastRefreshed": "2026-11-21T17:50:42.043Z",
   "counts": {
     "jobs": 95,
     "openJobs": 36,
@@ -14,14 +14,16 @@
       "count": 9
     },
     "programs": {
-      "ok": true,
-      "count": 22,
+      "ok": false,
+      "count": 21,
       "total": 22,
-      "failing": []
+      "failing": [
+        "curated:ozark-ic"
+      ]
     },
     "labs": {
       "ok": false,
-      "count": 31,
+      "count": 30,
       "total": 33,
       "failing": [
         "quinn"
