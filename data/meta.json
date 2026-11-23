@@ -1,7 +1,7 @@
 {
-  "lastRefreshed": "2026-11-22T18:09:11.084Z",
+  "lastRefreshed": "2026-11-23T22:19:46.312Z",
   "counts": {
-    "jobs": 95,
+    "jobs": 96,
     "openJobs": 36,
     "labs": 33,
     "nwa": 14,
@@ -11,19 +11,17 @@
   "sources": {
     "workday": {
       "ok": true,
-      "count": 9
+      "count": 10
     },
     "programs": {
-      "ok": false,
-      "count": 21,
+      "ok": true,
+      "count": 22,
       "total": 22,
-      "failing": [
-        "curated:ozark-ic"
-      ]
+      "failing": []
     },
     "labs": {
       "ok": false,
-      "count": 32,
+      "count": 30,
       "total": 33,
       "failing": [
         "quinn"
